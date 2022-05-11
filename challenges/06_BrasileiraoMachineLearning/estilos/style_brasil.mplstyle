@@ -1,0 +1,27 @@
+lines.color: 083326
+patch.edgecolor: 083326
+
+text.color: d9d9d9
+
+axes.facecolor: 083326
+axes.edgecolor: 17614a
+axes.labelcolor: fffb2d
+axes.axisbelow: True
+axes.titlecolor: d9d9d9
+
+
+xtick.color: d1d1d1
+ytick.color: d1d1d1
+
+grid.color: 17614a
+
+figure.facecolor: 083326
+figure.edgecolor: 083326
+
+savefig.facecolor: 083326
+savefig.edgecolor: 083326
+
+legend.fancybox: True
+legend.shadow: True
+legend.frameon: True
+legend.framealpha: 0.6
