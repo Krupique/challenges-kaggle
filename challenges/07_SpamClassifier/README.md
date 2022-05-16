@@ -1490,11 +1490,6 @@ from transformers import BertTokenizer
 from transformers import TFBertModel
 ```
 
-Link par ler posteriormente: https://towardsdatascience.com/how-to-use-bert-from-the-hugging-face-transformer-library-d373a22b0209
-<br/>
-Sei lá, vai que eu queira ler isso:
-https://ele.ufes.br/sites/engenhariaeletrica.ufes.br/files/field/anexo/projeto_de_graduacao_-_rafael_costa_-_final_-_revisado.pdf
-
 ##### 7.1) Tokenization
 
 O BERT Tokenizer é um tokenizer que funciona com o BERT. Possui muitas funcionalidades para qualquer tipo de tarefa de tokenização. Vamos utilizar um modelo pré treinado pelos próprios desenvolvedores do BERT.
