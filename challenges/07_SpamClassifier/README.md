@@ -127,19 +127,7 @@ df.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -233,7 +221,7 @@ fig.update_layout(
     )
 ```
 
-
+<img src='assets/graph01.png'>
 
 
 ```python
@@ -244,19 +232,7 @@ df.describe()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -327,7 +303,7 @@ fig.update_layout(
 fig.update_xaxes(range=[0, 70])
 ```
 
-
+<img src='assets/graph02.png'>
 
 Podemos perceber através do gráfico que os textos que são Spams têm no máximo 100 palavras.<br/><br/>
 
@@ -374,19 +350,7 @@ df.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -461,19 +425,7 @@ df.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -552,19 +504,7 @@ df.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -634,19 +574,7 @@ df.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -796,6 +724,7 @@ fig.update_layout(
     )
 ```
 
+<img src='assets/graph03.png'>
 
 
 ### 4) Vetorization
@@ -996,7 +925,7 @@ conf_matrix(metrics.confusion_matrix(y_test, y_pred_class))
     Visualizando a métrica AUC: 0.5
     
 
-
+<img src='assets/confusion_matrix01.png'>
 
 Vemos que essa primeira versão não foi boa, porque embora ele tenha acertado todos os valores Ham, o modelo só previu Ham. Utilizando a métrica AUC, acurácia para cada classe pudemos ver que o precisão do modelo na verdade está em 50%. Isso se dá pelos parâmetros do CountVectorizer que não estão bons.
 
@@ -1033,6 +962,7 @@ conf_matrix(metrics.confusion_matrix(y_test, y_pred_class))
     Os dados de treinos obtiveram a acurácia de: 95.98%
     
 
+<img src='assets/confusion_matrix02.png'>
 
 
 ##### 5.3) XGBoost
@@ -1086,7 +1016,8 @@ conf_matrix(metrics.confusion_matrix(y_test, y_pred_class))
     Acurácia do treinamento: 98.35%
     Acurácia dos testes: 96.55%
     
-
+	
+<img src='assets/confusion_matrix03.png'>
 
 
 ### 6) LSTM
@@ -1441,7 +1372,7 @@ conf_matrix(metrics.confusion_matrix(y_test, y_preds))
 
     Os dados de treinos obtiveram a acurácia de: 97.85%
     
-
+<img src='assets/confusion_matrix04.png'>
 
 
 
@@ -1469,7 +1400,11 @@ O gráfico abaixo é uma descrição de alto nível do codificador Transformer. 
 Ao treinar modelos de linguagem, existe o desafio de definir uma meta de previsão. Muitos modelos prevêem a próxima palavra em uma sequência (por exemplo, “A criança voltou para casa de ___”), uma abordagem direcional que limita inerentemente o aprendizado do contexto.<br/>
 
 Para superar esse desafio, o BERT usa duas estratégias de treinamento: Masked LM (MLM) e Next Sentence Prediction (NSP).
-<div style='text-align: center;'><img src='assets/bert.png'><p style='font-style:italic'>Fonte: BERT Explained: State of the art language model for NLP</p></div>
+
+<div style='text-align: center;'>
+<img src='assets/bert.png'>
+<p style='font-style:italic'>Fonte: BERT Explained: State of the art language model for NLP</p>
+</div>
 
 **Referência**
 * HOREV, Rani. *BERT Explained: State of the art language model for NLP*. 2018. Disponível em: <https://towardsdatascience.com/bert-explained-state-of-the-art-language-model-for-nlp-f8b21a9b6270> 
@@ -1689,7 +1624,7 @@ conf_matrix(metrics.confusion_matrix(y_target, y_preds))
 
     Acurácia do modelo BERT: 99.8%
     
-
+<img src='assets/confusion_matrix05.png'>
 
 
 ### 8) Considerações finais
@@ -1712,19 +1647,7 @@ pd.DataFrame(lista_resultados).sort_values(by='ACURÁCIA', ascending=False)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
