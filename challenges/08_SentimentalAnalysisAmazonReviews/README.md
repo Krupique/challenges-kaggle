@@ -565,7 +565,7 @@ fig.update_layout(
 ```
 
 
-<img src='assets/graph_02.png'>
+<img src='assets/graph_01.png'>
 
 Confirmando através do gráfico o que foi visto com a descrição do atributo 'overall'. Note o quão desigual é esse conjunto de dados. Mas não vamos desanimar, *'é nas dificuldades que se fazem os mais fortes'*
 
@@ -595,7 +595,7 @@ fig.update_xaxes(range=[0, 200])
 
 
 
-<img src="assets/graph_01.png"/>
+<img src="assets/graph_02.png"/>
 
 
 Bom, vamos analisar esse gráfico por partes. Primeiro as avaliações positivas. Nota que poucas pessoas fazem avaliações gigantescas, isto é, com uma enorme quantidade de palavras.</br>
