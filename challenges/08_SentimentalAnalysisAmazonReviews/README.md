@@ -131,19 +131,7 @@ df.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -267,19 +255,7 @@ df.loc[df['reviewText'].isnull()]
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -398,19 +374,7 @@ df.loc[df['reviewText'].isnull()]
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -458,19 +422,7 @@ df.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -613,6 +565,7 @@ fig.update_layout(
 ```
 
 
+<img src='assets/graph_02.png'>
 
 Confirmando através do gráfico o que foi visto com a descrição do atributo 'overall'. Note o quão desigual é esse conjunto de dados. Mas não vamos desanimar, *'é nas dificuldades que se fazem os mais fortes'*
 
@@ -642,6 +595,9 @@ fig.update_xaxes(range=[0, 200])
 
 
 
+<img src="assets/graph_01.png"/>
+
+
 Bom, vamos analisar esse gráfico por partes. Primeiro as avaliações positivas. Nota que poucas pessoas fazem avaliações gigantescas, isto é, com uma enorme quantidade de palavras.</br>
 Por outro lado, as avaliações neutras e negativas seguem um padrão de 2 a 6 palavras na maioria dos casos.
 
@@ -654,19 +610,7 @@ df.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -804,7 +748,7 @@ Vamos selecionar somente os atributos pertinentes a criação do nosso modelo. O
 df = df[['review', 'reviewTextLen', 'rating']]
 ```
 
-##### 3.1) Limpeza dos dados
+##### 3.3) Limpeza dos dados
 
 A nossa primeira etapa do pré processamento dos dados consiste em tornar os textos mais limpos e livres sujeira. Para isso vamos realizar algumas transformações, sendo: Transformar todo o texto em lowercase, remover textos entre colchetes e <>, remover links, pontuações e palavras que contenham números. Vamos utilizar as expressões regulares para realizar esse processamento.
 
@@ -826,7 +770,7 @@ def limparTexto(texto):
 df['reviewTextClean'] = df['review'].apply(limparTexto)
 ```
 
-##### 3.2) Stopwords
+##### 3.4) Stopwords
 
 Stopwords são palavras comuns que normalmente não contribuem para o significado de uma frase, pelo menos com relação ao propósito da informação e do processamento da linguagem natural. São palavras como "The" e "a" ((em inglês) ou "O/A" e "Um/Uma" ((em português). Muitos mecanismos de busca filtram estas palavras (stopwords), como forma de economizar espaço em seus índices de pesquisa.<br/>
 Vamos removê-las no nosso projeto:
@@ -849,19 +793,7 @@ df.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -914,7 +846,7 @@ df.head()
 
 
 
-##### 3.3) Stemming/Lematization
+##### 3.5) Stemming/Lematization
 
 **Stemming** é a técnica de remover sufixos e prefixos de uma palavra, chamada stem. Por exemplo, o stem da palavra cooking é cook. Um bom algoritmo sabe que "ing" é um sufixo e pode ser removido. Stemming é muito usado em mecanismos de buscas para indexação de palavras. Ao invés de armazenar todas as formas de uma palavras, um mecamismo de busca armazena apenas o stem da palavra, reduzindo o tamanho do índice e aumentando a performance do processo de busca.
 
@@ -941,19 +873,7 @@ df.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1006,7 +926,7 @@ df.head()
 
 
 
-##### 3.4) Target Encoding
+##### 3.6) Target Encoding
 
 Vamos converter nosso atributo target para o tipo categórico. Vamos mapear da seguinte forma: ham -> 0, spam -> 1. Dessa forma o algoritmo vai conseguir trabalhar com a variável sendo numérica. Para isso vamos utilizar a função LabelEnoder do Scikit-Learn.
 
@@ -1025,12 +945,6 @@ df['target'] = df['rating'].map(target_map)
 df = df.loc[df['reviewTextLen'] < 200]
 '''
 ```
-
-
-
-
-    "\ndf['rating'].unique()\ntarget_map = {\n    'positivo': 1,\n    'neutro': 0,\n    'negativo': 0\n}\n\ndf['target'] = df['rating'].map(target_map)\ndf = df.loc[df['reviewTextLen'] < 200]\n"
-
 
 
 Vamos transformar nossa variável categórica em variável numérica utilizando o LabelEncoder, os valores ficarão assim:
@@ -1055,19 +969,7 @@ df1.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1140,7 +1042,7 @@ df1.shape
 
 Vemos que mais de 1000 registros foram desconsiderados, mas foi pelo bem do modelo.
 
-##### 3.5) Visualização dos Tokens
+##### 3.7) Visualização dos Tokens
 
 Agora vamos criar uma nuvem de palavras para ver as principais ocorrências em cada tipo de mensagem. Acho que isso é considerado o 'Hello World' dos problemas de NLP kkkk, porque em todos os projetos que eu já estudei tem pelo menos uma nuvem de palavras. Vamos ver as principais ocorrências para cada tipo de avaliação.
 
@@ -1230,6 +1132,7 @@ fig.update_layout(
 ```
 
 
+<img src='assets/graph_03.png'>
 
 ### 4) Vetorization
 
@@ -1411,6 +1314,7 @@ conf_matrix(metrics.confusion_matrix(y_test, y_pred_class))
     Os dados de testes obtiveram a acurácia de: 88.53%
     
 
+<img src='assets/confusionMatrix_01.png'>
 
 
 **Problema**<br/>
@@ -1460,7 +1364,8 @@ conf_matrix(metrics.confusion_matrix(y_test, y_pred_class))
     Acurácia do treinamento: 93.83%
     Acurácia dos testes: 88.62%
     
-
+	
+<img src='assets/confusionMatrix_02.png'>
 
 
 É, deu uma melhorada, agora ele previu corretamente algumas avaliações neutras, mas ainda está muito aquém do aceitável. Vamos tentar outro modelo.
@@ -1505,6 +1410,7 @@ conf_matrix(metrics.confusion_matrix(y_test, y_pred_class))
     Acurácia dos testes: 89.05%
     
 
+<img src='assets/confusionMatrix_03.png'>
 
 
 Opa, boas notícias! A Regressão logística se saiu muito bem. O modelo foi capaz de realizar a previsão corretamente de avaliações negativas e também de avaliações neutras. Foram poucas previsões, mas devemos levar em consideração que o dataset está completamente enviesado.
@@ -1559,8 +1465,9 @@ conf_matrix(metrics.confusion_matrix(y_test, y_pred_class))
 
     Acurácia do treinamento: 99.8%
     Acurácia dos testes: 89.14%
-    
-
+  
+  
+<img src='assets/confusionMatrix_04.png'>
 
 
 Que legal! Consiguimos com o método do XGBoost obter 89% nos testes, mas dessa vez o modelo também previu avaliações neutras e negativas, tornando o algoritmo bem mais confiável. Mas será que ele pode melhorar? Para isso, poderia sugerir algumas alterações:
@@ -1603,13 +1510,6 @@ tf.debugging.set_log_device_placement(True)
 gpus = tf.config.list_logical_devices('GPU')
 strategy = tf.distribute.MirroredStrategy(gpus)
 ```
-
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    INFO:tensorflow:Using MirroredStrategy with devices ('/job:localhost/replica:0/task:0/device:GPU:0',)
-    
-
 
 ```python
 #Para trabalhar com LSTMs eu vou simplificar o problema, vamos tentar prever se a avaliação foi positiva ou negativa.
@@ -1828,277 +1728,7 @@ def glove_lstm():
 model = glove_lstm()
 model.summary()
 ```
-
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op RandomUniform in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Sub in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Mul in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AddV2 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    WARNING:tensorflow:Layer lstm will not use cuDNN kernels since it doesn't meet the criteria. It will use a generic GPU kernel as fallback when running on GPU.
-    WARNING:tensorflow:Layer lstm will not use cuDNN kernels since it doesn't meet the criteria. It will use a generic GPU kernel as fallback when running on GPU.
-    WARNING:tensorflow:Layer lstm will not use cuDNN kernels since it doesn't meet the criteria. It will use a generic GPU kernel as fallback when running on GPU.
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op RandomUniform in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Sub in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Mul in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AddV2 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op RandomStandardNormal in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Mul in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AddV2 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Qr in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op DiagPart in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Sign in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Mul in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Transpose in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Reshape in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Mul in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Fill in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Fill in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Fill in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ConcatV2 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op RandomUniform in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Sub in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Mul in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AddV2 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op RandomStandardNormal in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Mul in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AddV2 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Qr in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op DiagPart in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Sign in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Mul in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Transpose in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Reshape in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Mul in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Fill in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Fill in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Fill in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ConcatV2 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Fill in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Fill in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Fill in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op RealDiv in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:CPU:0
-    INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op RealDiv in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Fill in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op RealDiv in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:CPU:0
-    INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op RealDiv in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:CPU:0
-    INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
-    INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op RandomUniform in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Sub in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Mul in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AddV2 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Fill in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op RandomUniform in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Sub in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Mul in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AddV2 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Fill in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op RandomUniform in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Sub in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Mul in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AddV2 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Fill in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Fill in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:CPU:0
-    INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Fill in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:CPU:0
-    INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Model: "sequential"
+	Model: "sequential"
     _________________________________________________________________
      Layer (type)                Output Shape              Param #   
     =================================================================
@@ -2170,295 +1800,6 @@ model = glove_lstm()
 model.load_weights('modelLSTM.h5')
 ```
 
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op RandomUniform in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Sub in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Mul in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AddV2 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    WARNING:tensorflow:Layer lstm_4 will not use cuDNN kernels since it doesn't meet the criteria. It will use a generic GPU kernel as fallback when running on GPU.
-    WARNING:tensorflow:Layer lstm_4 will not use cuDNN kernels since it doesn't meet the criteria. It will use a generic GPU kernel as fallback when running on GPU.
-    WARNING:tensorflow:Layer lstm_4 will not use cuDNN kernels since it doesn't meet the criteria. It will use a generic GPU kernel as fallback when running on GPU.
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op RandomUniform in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Sub in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Mul in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AddV2 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op RandomStandardNormal in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Mul in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AddV2 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Qr in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op DiagPart in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Sign in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Mul in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Transpose in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Reshape in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Mul in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Fill in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Fill in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Fill in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ConcatV2 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op RandomUniform in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Sub in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Mul in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AddV2 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op RandomStandardNormal in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Mul in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AddV2 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Qr in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op DiagPart in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Sign in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Mul in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Transpose in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Reshape in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Mul in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Fill in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Fill in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Fill in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ConcatV2 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Fill in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Fill in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Fill in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op RealDiv in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op RealDiv in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Fill in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op RealDiv in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op RealDiv in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op RandomUniform in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Sub in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Mul in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AddV2 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Fill in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op RandomUniform in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Sub in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Mul in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AddV2 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Fill in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op RandomUniform in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Sub in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Mul in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AddV2 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Fill in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Fill in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Fill in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op VarHandleOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op NoOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op DestroyResourceOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op DestroyResourceOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op DestroyResourceOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op DestroyResourceOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op RealDiv in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op RealDiv in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    
 
 Vamos criar gráfico para visualizar a taxa de aprendizagem e a função de perda ao longo das épocas do treinamento do modelo.
 
@@ -2487,697 +1828,6 @@ y_preds = (model.predict(X_test)).astype("int32")
 resultadosLstm = round(model.evaluate(y_preds,y_test)[1] * 100, 2)
 #conf_matrix(metrics.confusion_matrix(y_test, y_preds))
 ```
-
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op RangeDataset in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op RepeatDataset in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op MapDataset in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op PrefetchDataset in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op FlatMapDataset in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op TensorDataset in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op RepeatDataset in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op ZipDataset in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op ParallelMapDatasetV2 in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op OptionsDataset in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op DatasetCardinality in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op ComputeBatchSize in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op NotEqual in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op MapDataset in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op RebatchDataset in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op PrefetchDataset in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op GetOptions in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op GetOptions in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op AutoShardDataset in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op OptionsDataset in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op GetOptions in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op AnonymousMultiDeviceIterator in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op MultiDeviceIteratorInit in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op MultiDeviceIteratorToStringHandle in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op GeneratorDataset in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op GeneratorDataset in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op PrefetchDataset in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AnonymousIteratorV2 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op MakeIterator in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_predict_function_3187 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ConcatV2 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op DeleteIterator in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op DeleteMultiDeviceIterator in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op RangeDataset in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op RepeatDataset in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op MapDataset in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op PrefetchDataset in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op FlatMapDataset in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op TensorDataset in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op RepeatDataset in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op ZipDataset in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op ParallelMapDatasetV2 in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op OptionsDataset in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op DatasetCardinality in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op ComputeBatchSize in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op NotEqual in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op MapDataset in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op RebatchDataset in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op PrefetchDataset in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op GetOptions in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op GetOptions in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op AutoShardDataset in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op OptionsDataset in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op GetOptions in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op AnonymousMultiDeviceIterator in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op MultiDeviceIteratorInit in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op MultiDeviceIteratorToStringHandle in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op GeneratorDataset in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op GeneratorDataset in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op PrefetchDataset in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AnonymousIteratorV2 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op MakeIterator in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Cast in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Cast in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Cast in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Cast in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op AssignVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:CPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-     1/72 [..............................] - ETA: 15s - loss: 0.5694 - accuracy: 0.8750Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-     4/72 [>.............................] - ETA: 1s - loss: 0.4648 - accuracy: 0.8984 Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-     7/72 [=>............................] - ETA: 1s - loss: 0.5096 - accuracy: 0.8884Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-     9/72 [==>...........................] - ETA: 1s - loss: 0.4764 - accuracy: 0.8958Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    11/72 [===>..........................] - ETA: 1s - loss: 0.4933 - accuracy: 0.8920Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    14/72 [====>.........................] - ETA: 1s - loss: 0.5395 - accuracy: 0.8817Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    16/72 [=====>........................] - ETA: 1s - loss: 0.5520 - accuracy: 0.8789Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    19/72 [======>.......................] - ETA: 1s - loss: 0.5694 - accuracy: 0.8750Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    22/72 [========>.....................] - ETA: 1s - loss: 0.5630 - accuracy: 0.8764Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    25/72 [=========>....................] - ETA: 1s - loss: 0.5638 - accuracy: 0.8763Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    28/72 [==========>...................] - ETA: 0s - loss: 0.5893 - accuracy: 0.8705Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    31/72 [===========>..................] - ETA: 0s - loss: 0.5784 - accuracy: 0.8730Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    35/72 [=============>................] - ETA: 0s - loss: 0.5654 - accuracy: 0.8759Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    39/72 [===============>..............] - ETA: 0s - loss: 0.5515 - accuracy: 0.8790Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    43/72 [================>.............] - ETA: 0s - loss: 0.5564 - accuracy: 0.8779Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    46/72 [==================>...........] - ETA: 0s - loss: 0.5451 - accuracy: 0.8804Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    49/72 [===================>..........] - ETA: 0s - loss: 0.5438 - accuracy: 0.8807Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    53/72 [=====================>........] - ETA: 0s - loss: 0.5352 - accuracy: 0.8827Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    56/72 [======================>.......] - ETA: 0s - loss: 0.5295 - accuracy: 0.8839Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    60/72 [========================>.....] - ETA: 0s - loss: 0.5345 - accuracy: 0.8828Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    63/72 [=========================>....] - ETA: 0s - loss: 0.5450 - accuracy: 0.8805Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    66/72 [==========================>...] - ETA: 0s - loss: 0.5483 - accuracy: 0.8797Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    70/72 [============================>.] - ETA: 0s - loss: 0.5574 - accuracy: 0.8777Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op ReadVariableOp in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op Identity in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op __inference_test_function_4926 in device /job:localhost/replica:0/task:0/device:GPU:0
-    72/72 [==============================] - 2s 21ms/step - loss: 0.5563 - accuracy: 0.8779
-    Executing op DeleteIterator in device /job:localhost/replica:0/task:0/device:GPU:0
-    Executing op DeleteMultiDeviceIterator in device /job:localhost/replica:0/task:0/device:CPU:0
-    
 
 
 ```python
@@ -3217,19 +1867,7 @@ pd.DataFrame(lista_resultados).sort_values(by='ACURÁCIA', ascending=False)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
