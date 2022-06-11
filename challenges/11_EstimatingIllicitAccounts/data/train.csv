@@ -1,0 +1,927 @@
+accountId,job,city,state,age,boletosCountPaid,boletosCountUnpaid,boletosSumPaid,boletosSumUnpaid,pixSendCount,pixSendSum,pixReceiveCount,pixReceiveSum,ranking
+842,Gestor de vendas,Mirassolândia,SP,52,386,291,3783,-2859,41,12499,984,9645,A
+422,Assistente comercial,Itapetininga,SP,32,441,463,2834,-2998,44,6733,672,4346,A
+253,Atendente de Telemarketing,Iperó,SP,37,412,534,2068,-2715,49,5206,652,3307,A
+595,Diretor de compras,General Salgado,SP,36,379,269,1322,-937,52,4370,897,3135,A
+989,Diretor de compras,Taiaçu,SP,54,0,0,0,0,0,0,0,0,A
+986,Gestor de vendas,Vera Cruz,SP,38,323,219,2229,-1518,39,6049,583,4002,A
+217,Diretor de compras,São Luís de Montes Belos,GO,32,443,51,1394,-162,36,2976,567,1792,A
+469,Diretor de compras,Mirassolândia,SP,36,0,0,0,0,0,0,0,0,A
+29,Motorista de aplicativo,São Sebastião do Alto,RJ,31,403,59,1537,-222,33,3178,448,1705,A
+315,Atendente de Telemarketing,Jaguariaíva,PR,49,0,0,0,0,0,0,0,0,A
+860,Diretor de compras,Nova Alvorada do Sul,MS,42,417,210,1448,-725,27,2813,428,1490,A
+749,Diretor de compras,Paranaíba,MS,44,284,149,1452,-764,36,3538,463,2351,A
+726,Diretor de compras,Ilha Comprida,SP,52,0,0,0,0,0,0,0,0,A
+740,Diretor de compras,São Fidélis,RJ,43,421,163,2229,-885,30,4328,414,2219,A
+701,Atendente de Telemarketing,São José Das Missões,RS,33,293,249,1350,-1131,23,2913,365,1655,A
+298,Diretor de compras,Mariana Pimentel,RS,35,273,85,773,-244,28,2217,528,1510,A
+201,Motorista de aplicativo,Feliz Natal,MT,28,163,178,591,-654,22,1486,317,1158,A
+901,Assistente comercial,Ivaté,PR,57,248,220,2150,-1884,24,4709,335,2884,A
+942,Atendente de Telemarketing,Porto Esperidião,MT,22,162,180,848,-950,21,2600,343,1807,A
+401,Diretor de compras,Vale de São Domingos,MT,46,236,110,800,-370,15,1753,329,1112,A
+351,Motorista de aplicativo,Taquaritinga,SP,54,180,148,1324,-1092,22,3662,334,2429,A
+707,Motorista de aplicativo,Marialva,PR,23,228,93,822,-331,24,2191,429,1533,A
+64,Atendente de Telemarketing,São Pedro do Sul,RS,45,175,262,945,-1408,18,2493,319,1726,A
+722,Diretor de compras,Confresa,MT,28,186,161,948,-812,14,1773,272,1364,A
+792,Motorista de aplicativo,Indiana,SP,31,137,104,545,-415,19,1431,252,1001,A
+543,Gestor de vendas,Montes Claros de Goiás,GO,33,0,0,0,0,0,0,0,0,A
+55,Motorista de aplicativo,Ibiraiaras,RS,56,120,73,664,-411,7,1623,200,1108,A
+773,Diretor de compras,Flores de Goiás,GO,47,59,9,436,-68,5,727,90,664,A
+573,Atendente de Telemarketing,Ribeirãozinho,MT,39,12,20,68,-116,8,587,106,612,A
+450,Atendente de Telemarketing,Novo Machado,RS,59,60,15,331,-84,6,559,59,331,A
+901,Assistente comercial,Apiaí,SP,39,48,44,181,-160,4,294,75,273,A
+247,Diretor de compras,Ivaté,PR,51,29,26,104,-93,3,120,15,56,A
+416,Diretor de compras,Godoy Moreira,PR,21,33,7,122,-26,1,144,30,112,A
+414,Motorista de aplicativo,Cruzeiro do Oeste,PR,29,15,8,74,-40,0,0,19,96,A
+26,Gestor de vendas,Foz do Jordão,PR,39,3,2,16,-12,0,0,6,32,A
+995,Diretor de compras,Paraíso,SP,56,136,138,1311,-1347,49,7624,672,6471,B
+756,Gestor de vendas,Panorama,SP,40,559,168,2873,-858,50,7648,970,4958,B
+336,Atendente de Telemarketing,Piracanjuba,GO,42,429,224,1504,-786,45,4709,931,3269,B
+311,Motorista de aplicativo,Angra Dos Reis,RJ,46,764,173,3938,-892,45,6900,592,3072,B
+221,Atendente de Telemarketing,Apiaí,SP,45,465,437,2365,-2208,39,6840,920,4648,B
+377,Atendente de Telemarketing,Ipiaçu,MG,40,202,97,661,-313,52,3573,921,3009,B
+355,Atendente de Telemarketing,Quinta do Sol,PR,37,249,356,1987,-2833,40,6557,599,4764,B
+76,Diretor de compras,Pompéia,SP,39,343,291,1720,-1451,42,4865,653,3271,B
+164,Assistente comercial,Barrinha,SP,45,279,305,969,-1040,41,3746,882,3026,B
+317,Assistente comercial,Alto Garças,MT,27,566,313,2113,-1187,38,5225,848,3187,B
+830,Assistente comercial,Primavera do Leste,MT,18,588,259,3164,-1402,45,7311,847,4523,B
+604,Assistente comercial,Porto Estrela,MT,56,547,69,3605,-455,42,7361,600,3975,B
+662,Atendente de Telemarketing,São Pedro da Cipa,MT,36,436,352,3114,-2534,36,8525,806,5764,B
+619,Diretor de compras,Nova Bandeirantes,MT,35,684,97,2952,-419,36,5301,586,2529,B
+850,Diretor de compras,Carlinda,MT,64,693,90,3874,-512,43,7018,611,3433,B
+737,Assistente comercial,Paula Freitas,PR,28,466,74,1727,-274,37,3402,497,1841,B
+493,Assistente comercial,São Bernardo do Campo,SP,28,0,0,0,0,0,0,0,0,B
+706,Diretor de compras,Cromínia,GO,46,0,0,0,0,0,0,0,0,B
+387,Entregador de aplicativo,Itambé,PR,29,520,278,3570,-1914,35,6865,514,3477,B
+121,Entregador de aplicativo,Juscimeira,MT,39,0,0,0,0,0,0,0,0,B
+894,Diretor de compras,Espigão Alto do Iguaçu,PR,31,501,208,1683,-703,40,3308,501,1676,B
+318,Assistente comercial,Foz do Jordão,PR,32,0,0,0,0,0,0,0,0,B
+531,Entregador de aplicativo,Cocalzinho de Goiás,GO,37,244,265,749,-805,30,2657,690,2107,B
+911,Diretor de compras,Iraí,RS,64,356,313,1807,-1573,30,5027,683,3425,B
+254,Atendente de Telemarketing,Hulha Negra,RS,58,579,56,1865,-181,37,3277,478,1537,B
+785,Diretor de compras,Mato Verde,MG,25,338,140,2745,-1145,25,5971,453,3650,B
+418,Assistente comercial,Espumoso,RS,51,0,0,0,0,0,0,0,0,B
+30,Assistente comercial,Jaú,SP,38,411,135,2762,-901,31,4886,399,2635,B
+384,Diretor de compras,Tarabai,SP,31,330,245,3091,-2273,25,8285,580,5373,B
+966,Gestor de vendas,Casimiro de Abreu,RJ,55,268,132,988,-481,26,2723,562,2059,B
+947,Motorista de aplicativo,Colniza,MT,23,0,0,0,0,0,0,0,0,B
+468,Atendente de Telemarketing,Santa Maria,RS,25,418,125,1422,-430,18,2747,528,1786,B
+965,Diretor de compras,Penápolis,SP,58,234,164,2463,-1725,30,5993,367,3856,B
+517,Gestor de vendas,Alto Alegre,SP,40,0,0,0,0,0,0,0,0,B
+384,Assistente comercial,Santa Salete,SP,32,0,0,0,0,0,0,0,0,B
+941,Atendente de Telemarketing,Novo Xingu,RS,57,222,105,974,-459,28,2125,331,1447,B
+826,Diretor de compras,Barueri,SP,61,432,89,2719,-565,26,4728,341,2130,B
+543,Diretor de compras,Cândido Mota,SP,54,217,128,843,-496,26,2669,509,1970,B
+861,Assistente comercial,Cantagalo,RJ,40,284,27,1478,-137,21,2207,154,794,B
+72,Diretor de compras,Arenápolis,MT,41,214,190,1051,-933,20,2356,284,1395,B
+226,Assistente comercial,Passo do Sobrado,RS,27,0,0,0,0,0,0,0,0,B
+904,Assistente comercial,Chavantes,SP,35,0,0,0,0,0,0,0,0,B
+468,Diretor de compras,Água Santa,RS,22,216,101,764,-357,18,1781,318,1128,B
+218,Assistente comercial,Campo Limpo de Goiás,GO,18,282,45,1061,-168,22,2427,406,1518,B
+307,Atendente de Telemarketing,Ressaquinha,MG,44,300,92,1514,-476,20,2928,299,1531,B
+350,Diretor de compras,Bela Vista do Paraíso,PR,56,171,125,1188,-870,21,2936,277,1885,B
+803,Atendente de Telemarketing,Campo Bom,RS,36,0,0,0,0,0,0,0,0,B
+954,Atendente de Telemarketing,Santa Helena de Goiás,GO,34,168,141,556,-471,18,1253,238,795,B
+672,Motorista de aplicativo,Duque de Caxias,RJ,28,194,39,647,-129,15,845,96,317,B
+87,Motorista de aplicativo,Barão de Melgaço,MT,45,152,65,1172,-508,22,2804,240,1846,B
+623,Diretor de compras,Cachoeira do Sul,RS,44,130,79,702,-420,15,1732,213,1137,B
+960,Assistente comercial,Rondolândia,MT,50,121,155,1199,-1530,14,1880,88,882,B
+717,Atendente de Telemarketing,Ribeirãozinho,MT,51,124,80,609,-377,13,996,95,465,B
+335,Atendente de Telemarketing,Corumbataí do Sul,PR,51,117,140,416,-494,17,846,140,488,B
+139,Assistente comercial,Mato Verde,MG,33,167,115,536,-372,12,1258,267,856,B
+913,Diretor de compras,Ribeirão do Sul,SP,33,196,45,1820,-417,12,3028,148,1392,B
+399,Atendente de Telemarketing,Ampére,PR,36,89,60,305,-205,8,942,234,803,B
+477,Diretor de compras,Nova Candelária,RS,26,94,58,466,-283,8,1289,261,1280,B
+478,Assistente comercial,Alto Garças,MT,39,34,24,288,-215,9,1468,150,1325,B
+850,Atendente de Telemarketing,Pindamonhangaba,SP,42,122,22,596,-104,7,1020,122,591,B
+977,Motorista de aplicativo,Mairinque,SP,20,44,12,408,-106,10,1538,139,1292,B
+857,Atendente de Telemarketing,Santa Bárbara D´oeste,SP,48,0,0,0,0,0,0,0,0,B
+84,Gestor de vendas,Arraial do Cabo,RJ,55,99,79,519,-417,7,1374,203,1087,B
+806,Gestor de vendas,Pinhalzinho,SP,50,113,85,821,-604,7,1602,198,1428,B
+244,Diretor de compras,Corumbataí do Sul,PR,40,93,16,346,-60,10,741,124,457,B
+225,Atendente de Telemarketing,Pirassununga,SP,64,96,28,859,-260,8,1987,141,1256,B
+203,Assistente comercial,Ampére,PR,24,66,38,263,-153,7,719,143,573,B
+406,Diretor de compras,Porto Real,RJ,38,0,0,0,0,0,0,0,0,B
+812,Motorista de aplicativo,Tabatinga,SP,24,20,18,127,-114,5,446,95,607,B
+720,Diretor de compras,Ribeirão Dos Índios,SP,26,50,16,164,-51,4,214,59,186,B
+612,Atendente de Telemarketing,Braganey,PR,49,49,18,158,-57,3,131,21,67,B
+967,Gestor de vendas,Santo Expedito do Sul,RS,49,17,26,50,-79,3,121,38,108,B
+133,Assistente comercial,Rebouças,PR,43,16,30,79,-148,3,154,30,147,B
+857,Atendente de Telemarketing,Rebouças,PR,42,12,23,61,-118,0,0,27,140,B
+451,Diretor de compras,Nova Monte Verde,MT,54,10,7,61,-47,1,195,38,245,B
+760,Diretor de compras,Paraíso das Águas,MS,27,147,104,869,-617,11,1612,169,1014,C
+454,Motorista de aplicativo,Nova Xavantina,MT,43,167,69,850,-346,17,2166,313,1558,C
+81,Assistente comercial,São João do Pau D´alho,SP,37,26,39,175,-257,12,1133,165,1091,C
+803,Diretor de compras,Jari,RS,55,0,0,0,0,0,0,0,0,C
+106,Atendente de Telemarketing,Aparecida,SP,46,144,59,499,-200,8,859,177,608,C
+416,Assistente comercial,Piracicaba,SP,56,0,0,0,0,0,0,0,0,C
+688,Assistente comercial,Cosmópolis,SP,39,239,137,1653,-924,15,3080,253,1743,C
+97,Atendente de Telemarketing,Grandes Rios,PR,58,144,37,711,-184,9,743,69,342,C
+356,Assistente comercial,Atibaia,SP,32,67,30,774,-337,12,2628,190,2163,C
+391,Assistente comercial,Santa Isabel,GO,56,181,60,954,-312,10,1552,171,894,C
+731,Atendente de Telemarketing,Sidrolândia,MS,57,0,0,0,0,0,0,0,0,C
+743,Assistente comercial,Queiroz,SP,27,24,40,125,-203,12,993,213,1083,C
+405,Motorista de aplicativo,Raposos,MG,31,79,93,541,-626,12,1906,248,1690,C
+351,Assistente comercial,Bodoquena,MS,36,126,117,691,-642,20,1929,238,1298,C
+120,Assistente comercial,Ribeirãozinho,MT,29,101,68,270,-187,7,573,164,442,C
+83,Assistente comercial,Várzea Grande,MT,22,185,84,630,-281,16,1185,187,638,C
+487,Atendente de Telemarketing,Paranaiguara,GO,20,123,22,369,-68,14,852,231,706,C
+170,Atendente de Telemarketing,Glória D´oeste,MT,52,107,46,897,-390,13,2031,153,1275,C
+859,Assistente comercial,São José Dos Quatro Marcos,MT,44,137,77,755,-426,10,1368,145,798,C
+494,Assistente comercial,Rancho Alegre D´oeste,PR,40,185,44,1317,-313,11,2442,183,1292,C
+364,Diretor de compras,Cachoeiras de Macacu,RJ,46,0,0,0,0,0,0,0,0,C
+123,Atendente de Telemarketing,Campo do Meio,MG,58,42,40,177,-171,10,726,156,661,C
+227,Gestor de vendas,São Bento do Sapucaí,SP,18,130,41,589,-191,18,1745,285,1282,C
+738,Assistente comercial,Ferraz de Vasconcelos,SP,34,85,95,261,-288,11,877,215,664,C
+525,Assistente comercial,Fartura,SP,33,34,20,168,-93,14,763,133,647,C
+850,Assistente comercial,Jaguariaíva,PR,46,0,0,0,0,0,0,0,0,C
+951,Atendente de Telemarketing,Pérola,PR,18,193,38,1170,-231,10,1302,55,332,C
+536,Diretor de compras,Prados,MG,47,129,98,604,-464,11,1221,142,667,C
+812,Diretor de compras,Miranda,MS,40,112,125,834,-933,16,2323,219,1630,C
+19,Assistente comercial,Capetinga,MG,39,162,47,796,-234,16,1425,168,839,C
+74,Diretor de compras,Arcos,MG,38,58,16,368,-102,14,758,75,492,C
+453,Assistente comercial,Cruzeiro do Oeste,PR,36,93,43,430,-196,15,1283,205,942,C
+279,Diretor de compras,Bela Vista da Caroba,PR,27,155,71,839,-381,14,1769,197,1053,C
+946,Assistente comercial,Confresa,MT,28,0,0,0,0,0,0,0,0,C
+286,Atendente de Telemarketing,Vinhedo,SP,32,106,121,315,-369,16,909,226,682,C
+333,Atendente de Telemarketing,Caseiros,RS,58,110,50,546,-244,8,603,65,324,C
+647,Atendente de Telemarketing,Estrela do Norte,SP,20,0,0,0,0,0,0,0,0,C
+457,Atendente de Telemarketing,Gaúcha do Norte,MT,43,136,22,964,-160,10,2091,268,1917,C
+183,Atendente de Telemarketing,Florestópolis,PR,43,134,147,1280,-1394,14,2966,214,2054,C
+582,Assistente comercial,Quadra,SP,26,180,29,907,-146,11,1184,67,338,C
+478,Diretor de compras,Onda Verde,SP,58,390,129,2006,-663,25,3425,332,1717,C
+304,Assistente comercial,Três Coroas,RS,46,241,21,1721,-149,16,2563,161,1157,C
+112,Diretor de compras,Pinheiral,RJ,23,223,91,921,-375,16,1695,209,861,C
+494,Atendente de Telemarketing,Votuporanga,SP,47,120,126,546,-559,11,1463,243,1114,C
+780,Assistente comercial,Antônio João,MS,53,128,24,1205,-224,7,1833,166,1561,C
+691,Diretor de compras,Mesópolis,SP,54,96,69,501,-356,12,1148,164,848,C
+64,Entregador de aplicativo,Bataguassu,MS,55,213,24,1098,-118,9,1870,168,864,C
+618,Gestor de vendas,Nova Mutum,MT,31,185,73,950,-379,15,1828,180,930,C
+504,Assistente comercial,São Valentim do Sul,RS,60,131,21,478,-76,8,1037,203,735,C
+388,Atendente de Telemarketing,Eugênio de Castro,RS,39,0,0,0,0,0,0,0,0,C
+467,Atendente de Telemarketing,Jales,SP,56,189,40,588,-126,13,974,204,637,C
+550,Diretor de compras,Tabaporã,MT,38,124,132,392,-412,12,941,201,636,C
+498,Assistente comercial,Jaguariúna,SP,56,123,23,448,-83,13,592,57,208,C
+836,Diretor de compras,Tambaú,SP,22,151,90,763,-457,9,1440,182,932,C
+943,Assistente comercial,Alambari,SP,58,65,80,391,-481,9,1181,152,922,C
+522,Diretor de compras,Colniza,MT,51,0,0,0,0,0,0,0,0,C
+962,Motorista de aplicativo,Barra do Quaraí,RS,18,51,43,273,-232,14,1387,218,1150,C
+889,Atendente de Telemarketing,São Carlos,SP,41,77,82,431,-467,11,1241,155,885,C
+8,Gestor de vendas,Presidente Alves,SP,27,116,14,634,-76,11,1754,228,1263,C
+483,Assistente comercial,Áurea,RS,43,107,69,689,-435,11,1749,190,1230,C
+59,Assistente comercial,Janiópolis,PR,47,112,71,810,-517,13,1590,180,1301,C
+384,Assistente comercial,Dourado,SP,49,121,90,932,-695,8,1672,141,1084,C
+290,Assistente comercial,Aparecida do Taboado,MS,56,160,34,751,-156,15,1330,144,681,C
+428,Diretor de compras,Santópolis do Aguapeí,SP,52,36,44,179,-223,9,1175,242,1212,C
+834,Gestor de vendas,Colíder,MT,56,83,90,630,-677,13,2565,277,2134,C
+323,Gestor de vendas,Novo Machado,RS,56,161,58,809,-288,15,2046,326,1614,C
+706,Assistente comercial,Taquarituba,SP,41,100,103,558,-585,8,1260,142,804,C
+522,Diretor de compras,Carapicuíba,SP,35,144,23,503,-78,11,769,145,503,C
+670,Gestor de vendas,Elias Fausto,SP,18,63,17,309,-83,11,584,86,434,C
+781,Assistente comercial,Santo Antônio de Posse,SP,49,118,52,1088,-472,14,2240,151,1379,C
+945,Motorista de aplicativo,Paraíso das Águas,MS,42,90,82,482,-430,13,1581,242,1276,C
+953,Assistente comercial,Salto Grande,SP,23,0,0,0,0,0,0,0,0,C
+928,Atendente de Telemarketing,Tesouro,MT,42,113,88,553,-418,18,1700,278,1345,C
+535,Atendente de Telemarketing,Cabo Frio,RJ,35,0,0,0,0,0,0,0,0,C
+857,Assistente comercial,Bocaina,SP,35,125,47,643,-239,15,1347,176,903,C
+537,Diretor de compras,Itaquiraí,MS,55,95,198,502,-1047,13,1465,201,1053,C
+709,Diretor de compras,Pontal,SP,35,222,115,1106,-565,17,2225,266,1336,C
+545,Atendente de Telemarketing,Bom Jesus Dos Perdões,SP,54,98,42,519,-223,10,1231,155,815,C
+2,Atendente de Telemarketing,Ribeirão Bonito,SP,33,128,95,758,-558,11,1475,171,1017,C
+989,Motorista de aplicativo,Bom Jardim,RJ,44,125,104,622,-523,5,556,83,415,C
+391,Assistente comercial,Carapicuíba,SP,21,49,42,301,-255,11,1295,181,1108,C
+898,Atendente de Telemarketing,Ivinhema,MS,27,53,8,223,-34,17,1087,226,945,C
+272,Motorista de aplicativo,São Miguel do Passa Quatro,GO,54,270,31,961,-112,20,1301,103,372,C
+261,Diretor de compras,Dumont,SP,29,128,68,603,-321,11,1137,135,634,C
+170,Atendente de Telemarketing,Lindolfo Collor,RS,40,0,0,0,0,0,0,0,0,C
+425,Gestor de vendas,Augusto de Lima,MG,40,0,0,0,0,0,0,0,0,C
+572,Atendente de Telemarketing,Novo Cabrais,RS,42,72,82,270,-300,8,684,219,804,C
+797,Assistente comercial,Novo Horizonte,SP,57,143,14,719,-71,16,1612,212,1054,C
+993,Diretor de compras,Tapera,RS,36,79,81,401,-415,9,1174,192,985,C
+335,Gestor de vendas,São Sebastião do Caí,RS,35,148,68,452,-209,10,1002,200,616,C
+249,Assistente comercial,Murutinga do Sul,SP,36,120,78,833,-542,6,2070,225,1589,C
+146,Assistente comercial,Itapejara D´oeste,PR,51,168,122,909,-664,9,2251,285,1544,C
+840,Atendente de Telemarketing,Rosana,SP,40,145,56,754,-290,11,1485,155,811,C
+300,Diretor de compras,Nova Bandeirantes,MT,40,97,55,439,-257,13,625,72,322,C
+976,Diretor de compras,Gravataí,RS,32,143,18,813,-104,13,1583,154,884,C
+387,Diretor de compras,Miguel Pereira,RJ,50,227,64,827,-233,10,1145,170,610,C
+494,Assistente comercial,Aurilândia,GO,21,127,50,527,-205,13,1144,197,811,C
+733,Atendente de Telemarketing,Avanhandava,SP,36,122,63,471,-240,14,920,133,511,C
+877,Entregador de aplicativo,São Gonçalo do Abaeté,MG,41,96,50,489,-255,6,986,167,853,C
+509,Assistente comercial,Porto Barreiro,PR,55,136,41,694,-214,14,1348,157,818,C
+607,Atendente de Telemarketing,Novo Horizonte do Norte,MT,34,25,30,119,-143,12,771,201,958,C
+661,Assistente comercial,Mendes,RJ,59,150,48,757,-235,14,2257,314,1579,C
+588,Atendente de Telemarketing,Gaúcha do Norte,MT,31,119,95,1140,-921,14,3840,308,2996,C
+315,Gestor de vendas,Mesópolis,SP,46,103,41,554,-224,13,1194,140,765,C
+69,Atendente de Telemarketing,Sagres,SP,47,91,92,348,-356,13,561,84,322,C
+657,Motorista de aplicativo,Guarani Das Missões,RS,31,130,35,853,-224,13,2057,200,1283,C
+36,Atendente de Telemarketing,Salgado Filho,PR,41,185,57,524,-164,16,1300,326,923,C
+438,Assistente comercial,Taiúva,SP,56,144,39,762,-206,11,1451,155,812,C
+29,Diretor de compras,Florínia,SP,39,0,0,0,0,0,0,0,0,C
+202,Assistente comercial,Botucatu,SP,42,148,71,800,-381,13,1469,155,839,C
+194,Assistente comercial,São Gonçalo,RJ,19,0,0,0,0,0,0,0,0,C
+342,Diretor de compras,Aguaí,SP,25,164,61,606,-226,11,1135,180,662,C
+453,Diretor de compras,Parapuã,SP,49,174,50,846,-251,9,1583,179,876,C
+227,Gestor de vendas,Paranaíta,MT,60,0,0,0,0,0,0,0,0,C
+260,Atendente de Telemarketing,Murutinga do Sul,SP,38,105,107,537,-540,17,1650,231,1162,C
+289,Gestor de vendas,Bom Jardim de Goiás,GO,50,95,34,380,-137,12,851,131,508,C
+519,Atendente de Telemarketing,Pirapozinho,SP,29,70,92,227,-304,15,631,162,535,C
+845,Atendente de Telemarketing,Barra do Quaraí,RS,57,102,51,548,-266,11,1190,149,791,C
+358,Diretor de compras,Nova Guarita,MT,42,123,77,581,-365,8,766,60,278,C
+983,Atendente de Telemarketing,Barbosa Ferraz,PR,47,68,59,324,-289,10,924,139,675,C
+37,Diretor de compras,Salto do Céu,MT,40,150,57,557,-212,8,1142,182,674,C
+403,Atendente de Telemarketing,Santo Afonso,MT,38,34,38,164,-187,8,608,152,724,C
+387,Diretor de compras,Araçoiaba da Serra,SP,18,68,63,324,-294,12,1305,222,1053,C
+496,Assistente comercial,Pérola,PR,23,0,0,0,0,0,0,0,0,C
+434,Assistente comercial,Douradina,MS,47,28,37,142,-181,6,398,64,310,C
+43,Diretor de compras,Bela Vista da Caroba,PR,42,167,93,943,-522,15,1955,199,1123,C
+553,Gestor de vendas,Paraúna,GO,22,108,58,609,-326,13,1542,253,1420,C
+729,Atendente de Telemarketing,Ribas do Rio Pardo,MS,35,85,79,443,-412,6,1259,221,1146,C
+105,Assistente comercial,Cajobi,SP,33,54,11,190,-41,15,916,242,845,C
+304,Atendente de Telemarketing,Santa Cruz de Monte Castelo,PR,63,168,39,1652,-391,13,2847,153,1520,C
+90,Motorista de aplicativo,Vila Propício,GO,52,127,100,510,-398,11,1163,207,836,C
+781,Assistente comercial,Piranga,MG,59,141,53,971,-366,15,1784,171,1167,C
+74,Diretor de compras,Pedro Gomes,MS,41,92,90,357,-352,7,571,64,250,C
+102,Assistente comercial,Bom Jesus Dos Perdões,SP,42,104,158,519,-785,10,1107,175,873,C
+252,Diretor de compras,São Pedro do Butiá,RS,52,113,126,427,-473,10,967,164,615,C
+226,Assistente comercial,Leme,SP,51,0,0,0,0,0,0,0,0,C
+873,Motorista de aplicativo,Alto Taquari,MT,19,0,0,0,0,0,0,0,0,C
+134,Diretor de compras,General Carneiro,MT,30,126,40,511,-162,12,886,159,643,C
+546,Diretor de compras,Vista Alegre do Prata,RS,18,60,84,197,-282,11,616,157,527,C
+437,Assistente comercial,Pinhal de São Bento,PR,26,0,0,0,0,0,0,0,0,C
+733,Motorista de aplicativo,Aratiba,RS,26,104,61,532,-314,13,1245,173,897,C
+960,Diretor de compras,Artur Nogueira,SP,42,244,220,1124,-1009,28,2393,298,1392,C
+331,Assistente comercial,Japorã,MS,33,201,69,1802,-604,12,2038,63,553,C
+443,Diretor de compras,Nova Olímpia,PR,46,129,70,968,-517,6,1104,154,1147,C
+528,Diretor de compras,Novo Gama,GO,57,205,47,1485,-334,15,2233,206,1493,C
+691,Diretor de compras,Poté,MG,29,0,0,0,0,0,0,0,0,C
+558,Assistente comercial,Ouro Verde de Goiás,GO,24,0,0,0,0,0,0,0,0,C
+191,Atendente de Telemarketing,Natividade da Serra,SP,25,182,39,940,-210,16,1827,218,1123,C
+531,Assistente comercial,Erval Grande,RS,41,0,0,0,0,0,0,0,0,C
+852,Atendente de Telemarketing,Peruíbe,SP,46,110,123,905,-999,13,2159,165,1355,C
+982,Assistente comercial,Conceição de Macabu,RJ,56,93,153,522,-861,10,1240,146,796,C
+693,Diretor de compras,Três Coroas,SP,63,147,35,537,-129,13,1171,194,714,C
+85,Assistente comercial,Pirajuba,MG,41,57,24,221,-92,12,938,195,750,C
+429,Assistente comercial,Viadutos,RS,44,136,152,707,-791,16,2162,297,1540,C
+365,Assistente comercial,São Paulo,SP,61,127,31,1160,-288,8,1564,80,730,C
+157,Atendente de Telemarketing,Itararé,SP,36,52,9,455,-80,11,1936,210,1787,C
+631,Assistente comercial,Nova Olímpia,PR,61,195,44,896,-200,10,972,162,748,C
+729,Entregador de aplicativo,Salgado Filho,PR,40,0,0,0,0,0,0,0,0,C
+78,Assistente comercial,Angatuba,SP,43,84,63,458,-339,7,1398,234,1261,C
+689,Motorista de aplicativo,Nova Ubiratã,MT,39,99,58,484,-288,11,1091,148,710,C
+580,Diretor de compras,Lorena,SP,57,76,96,384,-478,13,748,82,408,C
+416,Atendente de Telemarketing,Itaocara,RJ,20,161,76,1175,-560,20,3039,279,2056,C
+468,Diretor de compras,São Luís do Paraitinga,SP,37,60,11,223,-42,14,963,223,831,C
+867,Diretor de compras,Ilhabela,SP,36,231,26,1803,-206,10,2886,174,1362,C
+569,Diretor de compras,Lajeado do Bugre,RS,39,101,37,462,-170,15,1346,215,992,C
+886,Atendente de Telemarketing,São Miguel Arcanjo,SP,20,118,97,506,-422,12,1059,163,699,C
+967,Assistente comercial,Aripuanã,MT,45,118,35,560,-166,13,1217,155,734,C
+603,Assistente comercial,Jacupiranga,SP,20,126,37,549,-162,11,1096,144,630,C
+354,Gestor de vendas,Porecatu,PR,41,133,94,718,-505,18,1696,205,1094,C
+284,Motorista de aplicativo,Cordeiro,RJ,32,163,46,1107,-306,9,2271,225,1495,C
+952,Atendente de Telemarketing,Taquaritinga,SP,51,169,39,1210,-279,11,1778,136,974,C
+280,Diretor de compras,Corumbataí,SP,21,192,43,702,-159,16,1487,228,834,C
+307,Assistente comercial,Erval Grande,RS,58,101,122,557,-661,9,1396,178,963,C
+685,Atendente de Telemarketing,Bom Sucesso de Itararé,SP,38,0,0,0,0,0,0,0,0,C
+254,Diretor de compras,Floresta,PR,48,91,95,494,-510,12,1110,190,1019,C
+358,Diretor de compras,Cravinhos,SP,39,81,60,290,-214,11,896,214,769,C
+255,Assistente comercial,Morrinhos,GO,18,158,47,529,-156,6,663,140,467,C
+187,Diretor de compras,Paranapoema,PR,61,0,0,0,0,0,0,0,0,C
+592,Assistente comercial,Tangará da Serra,MT,53,119,77,442,-286,8,1079,216,799,C
+745,Atendente de Telemarketing,Várzea Grande,MT,48,28,47,228,-390,13,1895,218,1809,C
+587,Atendente de Telemarketing,Juscimeira,MT,40,113,122,482,-509,10,971,153,643,C
+824,Assistente comercial,Pontes e Lacerda,MT,50,88,84,417,-398,12,1115,168,814,C
+130,Atendente de Telemarketing,Reginópolis,SP,38,78,87,408,-447,12,1452,224,1168,C
+821,Motorista de aplicativo,Marinópolis,SP,46,71,64,364,-331,8,1422,225,1125,C
+246,Diretor de compras,Jardim,MS,18,0,0,0,0,0,0,0,0,C
+458,Atendente de Telemarketing,Porto Esperidião,MT,48,245,46,1306,-251,13,2021,200,1079,C
+972,Assistente comercial,Santa Maria da Serra,SP,49,62,95,639,-1001,12,2076,166,1756,C
+558,Assistente comercial,Jardinópolis,SP,47,115,135,1045,-1209,10,3028,270,2397,C
+672,Assistente comercial,Marcelino Ramos,RS,41,166,76,582,-260,10,1328,245,856,C
+66,Assistente comercial,Itu,SP,53,165,40,1362,-329,14,2985,222,1814,C
+429,Assistente comercial,Guaimbê,SP,56,119,128,697,-742,5,1344,165,958,C
+29,Gestor de vendas,Gastão Vidigal,SP,52,135,72,589,-312,8,1356,204,894,C
+213,Atendente de Telemarketing,Porecatu,PR,41,172,86,881,-437,12,2113,285,1472,C
+806,Diretor de compras,Mirandópolis,SP,40,146,49,749,-249,10,1465,183,939,C
+141,Assistente comercial,Couto de Magalhães de Minas,MG,37,97,53,327,-178,7,358,74,246,C
+97,Assistente comercial,Ametista do Sul,RS,26,47,22,219,-106,11,906,171,774,C
+748,Assistente comercial,General Salgado,SP,43,0,0,0,0,0,0,0,0,C
+956,Assistente comercial,Maravilhas,MG,38,0,0,0,0,0,0,0,0,C
+99,Diretor de compras,Feliz Natal,MT,67,0,0,0,0,0,0,0,0,C
+978,Diretor de compras,Grandes Rios,PR,27,133,34,406,-107,7,684,160,498,C
+726,Assistente comercial,Araras,SP,42,89,69,508,-395,10,1241,147,849,C
+499,Atendente de Telemarketing,Porto Barreiro,PR,29,87,88,270,-273,15,439,65,202,C
+621,Atendente de Telemarketing,São Miguel Das Missões,RS,47,0,0,0,0,0,0,0,0,C
+372,Assistente comercial,Sandovalina,SP,28,40,12,181,-54,6,784,157,703,C
+125,Assistente comercial,Guarani D´oeste,SP,34,0,0,0,0,0,0,0,0,C
+588,Diretor de compras,Uru,SP,29,204,24,652,-76,11,1045,136,439,C
+557,Diretor de compras,Carlinda,MT,57,97,114,665,-764,9,924,62,419,C
+193,Diretor de compras,Vespasiano Correa,RS,34,108,96,622,-550,12,1712,203,1166,C
+216,Gestor de vendas,Itaverava,MG,38,57,8,321,-47,10,1169,181,1037,C
+967,Gestor de vendas,Rio Verde,GO,55,78,72,473,-433,8,963,148,893,C
+414,Assistente comercial,Silvânia,GO,37,84,134,453,-726,10,1085,134,721,C
+564,Gestor de vendas,Crisólita,MG,60,83,48,264,-149,11,562,130,413,C
+514,Gestor de vendas,Mairiporã,SP,30,106,31,822,-250,11,1048,71,551,C
+584,Assistente comercial,Nova Bréscia,RS,42,0,0,0,0,0,0,0,0,C
+843,Atendente de Telemarketing,Barra do Piraí,RJ,35,132,51,559,-216,9,842,121,525,C
+932,Gestor de vendas,Salvador Das Missões,RS,30,0,0,0,0,0,0,0,0,C
+591,Diretor de compras,Itaberá,SP,31,90,84,426,-401,7,1123,180,851,C
+63,Atendente de Telemarketing,Lagamar,MG,48,94,102,518,-579,13,1155,129,728,C
+183,Assistente comercial,Macuco,RJ,41,118,19,803,-127,8,1340,120,825,C
+840,Entregador de aplicativo,Água Boa,MT,30,65,61,290,-266,11,419,46,199,C
+761,Diretor de compras,Itapuranga,GO,21,0,0,0,0,0,0,0,0,C
+738,Entregador de aplicativo,Campinas,SP,19,146,39,728,-195,7,1182,115,583,C
+987,Atendente de Telemarketing,Rubinéia,SP,22,106,36,450,-155,9,871,148,614,C
+535,Atendente de Telemarketing,Santo Antônio da Patrulha,RS,37,139,25,484,-90,9,598,54,189,C
+427,Assistente comercial,São Luís de Montes Belos,GO,29,57,23,209,-84,6,516,105,398,C
+387,Diretor de compras,Monte Alegre Dos Campos,RS,42,115,25,582,-127,6,771,92,460,C
+966,Atendente de Telemarketing,Novo Tiradentes,RS,55,75,66,556,-499,7,1089,98,741,C
+167,Assistente comercial,Leandro Ferreira,MG,33,73,64,572,-488,5,1007,88,690,C
+41,Atendente de Telemarketing,Trabiju,SP,47,57,26,199,-92,6,419,83,289,C
+94,Assistente comercial,Corumbataí do Sul,PR,32,101,18,744,-128,6,1356,130,957,C
+515,Diretor de compras,Fartura,SP,40,0,0,0,0,0,0,0,0,C
+801,Entregador de aplicativo,Bela Vista da Caroba,PR,35,71,59,277,-228,4,296,88,348,C
+941,Gestor de vendas,Inimutaba,MG,35,54,17,277,-88,6,701,122,641,C
+744,Atendente de Telemarketing,Brodowski,SP,40,84,29,329,-113,7,454,82,326,C
+92,Diretor de compras,Santo Antônio do Aracanguá,SP,18,55,29,294,-160,6,572,79,414,C
+690,Diretor de compras,Santo Afonso,MT,29,0,0,0,0,0,0,0,0,C
+984,Diretor de compras,Matupá,MT,44,60,21,188,-67,4,118,42,131,C
+868,Atendente de Telemarketing,Rebouças,PR,56,70,14,358,-72,4,775,115,575,C
+614,Atendente de Telemarketing,Batayporã,MS,34,0,0,0,0,0,0,0,0,C
+284,Assistente comercial,Valença,RJ,33,41,23,214,-125,4,477,69,372,C
+598,Atendente de Telemarketing,Fagundes Varela,RS,25,43,10,182,-43,2,228,29,122,C
+365,Atendente de Telemarketing,Guararema,SP,52,20,9,94,-43,4,261,56,262,C
+23,Diretor de compras,Itapejara D´oeste,PR,23,0,0,0,0,0,0,0,0,C
+634,Atendente de Telemarketing,Volta Redonda,RJ,41,23,28,113,-142,2,237,74,370,C
+126,Motorista de aplicativo,Jordânia,MG,29,84,6,564,-42,5,575,72,476,C
+346,Atendente de Telemarketing,Poconé,MT,18,43,40,147,-139,3,203,62,214,C
+966,Assistente comercial,Avelinópolis,GO,31,46,32,222,-163,3,407,80,394,C
+819,Motorista de aplicativo,Charqueada,SP,52,32,17,106,-56,3,229,75,249,C
+666,Atendente de Telemarketing,Porto Amazonas,PR,48,40,6,149,-23,4,236,43,161,C
+155,Assistente comercial,Maripá,PR,27,0,0,0,0,0,0,0,0,C
+940,Assistente comercial,Hulha Negra,RS,33,28,20,137,-95,3,248,62,298,C
+590,Atendente de Telemarketing,Divinolândia,SP,43,45,32,326,-242,2,255,68,505,C
+946,Motorista de aplicativo,Arroio do Meio,RS,42,0,0,0,0,0,0,0,0,C
+335,Assistente comercial,Pinhal de São Bento,PR,41,27,8,118,-37,4,133,28,124,C
+821,Entregador de aplicativo,Nova Canaã do Norte,MT,42,0,0,0,0,0,0,0,0,C
+984,Motorista de aplicativo,Riolândia,SP,57,47,5,159,-17,1,115,49,172,C
+676,Diretor de compras,Mongaguá,SP,32,21,15,101,-76,0,0,26,128,C
+538,Gestor de vendas,Nova Belém,MG,40,18,5,80,-21,0,0,22,99,C
+730,Assistente comercial,Taciba,SP,39,15,4,46,-13,2,59,24,76,C
+370,Diretor de compras,Santa Cecília do Pavão,PR,35,9,3,63,-22,0,0,5,36,C
+960,Assistente comercial,Presidente Bernardes,MG,22,1,2,5,-10,0,0,5,27,C
+477,Diretor de compras,Uruaçu,GO,58,5,3,27,-16,0,0,8,45,C
+708,Motorista de aplicativo,Formosa,GO,41,0,0,0,0,0,0,0,0,C
+37,Gestor de vendas,Barra do Ribeiro,RS,26,0,0,0,0,0,0,0,0,C
+747,Atendente de Telemarketing,Praia Grande,SP,45,113,153,375,-513,10,625,172,567,D
+66,Gestor de vendas,Dom Feliciano,RS,40,184,33,1341,-247,5,1321,166,1221,D
+277,Motorista de aplicativo,Piraí do Sul,PR,55,90,112,455,-570,9,1154,159,797,D
+228,Assistente comercial,Capetinga,MG,39,0,0,0,0,0,0,0,0,D
+343,Assistente comercial,Paranatinga,MT,40,0,0,0,0,0,0,0,0,D
+63,Motorista de aplicativo,Torixoréu,MT,35,0,0,0,0,0,0,0,0,D
+857,Assistente comercial,Coronel Barros,RS,21,81,10,393,-46,13,1293,204,1001,D
+418,Assistente comercial,Divino,MG,25,198,51,751,-193,9,1469,212,796,D
+832,Entregador de aplicativo,Firminópolis,GO,55,0,0,0,0,0,0,0,0,D
+53,Assistente comercial,São Patrício,GO,34,162,62,931,-360,13,1238,69,389,D
+567,Diretor de compras,Gameleira de Goiás,GO,31,214,48,773,-171,12,1504,241,863,D
+806,Diretor de compras,Anastácio,MS,38,197,32,810,-132,12,1539,201,817,D
+936,Assistente comercial,Campos Borges,RS,42,103,52,358,-179,25,1343,306,1044,D
+384,Atendente de Telemarketing,Taiúva,SP,27,78,70,288,-255,16,442,61,218,D
+285,Motorista de aplicativo,Regente Feijó,SP,34,188,36,1731,-335,7,2827,149,1364,D
+565,Motorista de aplicativo,Novo Horizonte,SP,58,74,95,361,-459,10,1118,167,821,D
+258,Diretor de compras,Natividade,RJ,31,91,56,303,-184,10,615,141,464,D
+711,Diretor de compras,Rio Negro,MS,41,176,37,1757,-359,10,2972,149,1480,D
+69,Assistente comercial,Vicentina,MS,57,183,48,983,-256,10,2071,311,1662,D
+201,Diretor de compras,Inocência,MS,40,107,110,389,-405,13,959,191,703,D
+250,Gestor de vendas,Chapadão do Sul,MS,43,0,0,0,0,0,0,0,0,D
+951,Gestor de vendas,Guariba,SP,54,108,50,625,-293,12,1402,157,915,D
+720,Gestor de vendas,Porto Amazonas,PR,30,0,0,0,0,0,0,0,0,D
+364,Diretor de compras,Nova Hartz,RS,27,117,99,587,-482,10,1027,141,692,D
+832,Atendente de Telemarketing,Datas,MG,46,224,48,778,-165,13,1674,278,976,D
+355,Atendente de Telemarketing,Augusto Pestana,RS,54,182,24,623,-81,11,1015,139,480,D
+787,Assistente comercial,Nova Prata do Iguaçu,PR,57,98,141,527,-761,6,1024,194,1047,D
+466,Atendente de Telemarketing,Bragança Paulista,SP,49,191,49,1035,-265,14,2018,228,1234,D
+970,Assistente comercial,Alto Taquari,MT,30,205,134,1019,-667,12,2339,308,1528,D
+273,Diretor de compras,Alterosa,MG,41,120,91,644,-490,11,1353,146,783,D
+950,Diretor de compras,Bom Jesus Dos Perdões,SP,49,99,85,574,-488,17,2032,275,1590,D
+382,Assistente comercial,Patos de Minas,MG,27,100,32,1108,-351,11,2226,133,1469,D
+127,Gestor de vendas,Peabiru,PR,30,69,77,403,-463,11,1375,224,1341,D
+159,Diretor de compras,Ilópolis,RS,38,160,38,875,-207,8,1482,156,853,D
+186,Assistente comercial,Campo Verde,MT,37,188,70,1072,-398,15,2092,235,1328,D
+7,Atendente de Telemarketing,Limeira,SP,42,161,34,1342,-286,10,3183,260,2156,D
+554,Assistente comercial,Ribeirão Preto,SP,44,213,61,781,-223,12,1262,182,672,D
+830,Assistente comercial,Porto Dos Gaúchos,MT,38,123,78,1075,-662,13,3029,261,2275,D
+33,Entregador de aplicativo,Pequi,MG,34,151,62,851,-352,12,1574,170,985,D
+139,Diretor de compras,Palminópolis,GO,54,149,26,538,-95,11,885,162,579,D
+161,Atendente de Telemarketing,Turvelândia,GO,38,205,47,1570,-355,11,2751,174,1333,D
+630,Diretor de compras,Rebouças,PR,46,192,47,1016,-250,7,1689,148,788,D
+215,Assistente comercial,Nova Luzitânia,SP,44,0,0,0,0,0,0,0,0,D
+321,Assistente comercial,Canela,RS,32,0,0,0,0,0,0,0,0,D
+104,Atendente de Telemarketing,Dilermando de Aguiar,RS,23,114,47,570,-229,9,1163,136,684,D
+539,Diretor de compras,Jales,SP,25,166,55,707,-230,15,1524,224,948,D
+652,Assistente comercial,Zacarias,SP,44,70,49,272,-187,10,724,154,601,D
+774,Assistente comercial,Tabaporã,MT,55,43,22,217,-110,11,909,144,724,D
+77,Atendente de Telemarketing,Tabapuã,SP,25,120,49,879,-368,13,2028,177,1302,D
+841,Diretor de compras,Cachoeira de Goiás,GO,64,0,0,0,0,0,0,0,0,D
+330,Assistente comercial,Flórida Paulista,SP,62,166,67,832,-338,8,1108,86,438,D
+636,Assistente comercial,Unistalda,RS,44,142,126,677,-589,15,1387,167,785,D
+29,Atendente de Telemarketing,Guaraci,PR,55,0,0,0,0,0,0,0,0,D
+567,Atendente de Telemarketing,Cruzeiro do Oeste,PR,26,97,41,960,-399,7,1190,61,592,D
+742,Atendente de Telemarketing,São Simão,GO,51,74,55,257,-192,8,506,138,480,D
+166,Entregador de aplicativo,Monte Alto,SP,53,190,35,1720,-311,10,3435,250,2260,D
+360,Diretor de compras,Capivari,SP,38,119,80,1029,-696,12,2786,241,2084,D
+200,Assistente comercial,Ipeúna,SP,34,183,38,625,-131,12,819,78,271,D
+631,Atendente de Telemarketing,Álvares Florence,SP,57,175,49,1537,-438,7,2345,147,1278,D
+675,Diretor de compras,Conquista D´oeste,MT,39,90,59,570,-390,14,1279,146,936,D
+853,Assistente comercial,Três Lagoas,MS,52,132,112,743,-629,17,2237,301,1704,D
+11,Assistente comercial,Vassouras,RJ,23,133,19,1238,-172,14,2192,129,1193,D
+489,Diretor de compras,Tupã,SP,40,189,111,865,-515,18,1864,245,1124,D
+370,Entregador de aplicativo,Bonito,MS,29,0,0,0,0,0,0,0,0,D
+333,Gestor de vendas,Goianira,GO,42,158,47,1200,-353,12,2058,162,1231,D
+223,Entregador de aplicativo,Floraí,PR,53,119,54,431,-198,16,1204,241,861,D
+554,Atendente de Telemarketing,Paracambi,RJ,38,131,31,700,-164,8,1029,72,392,D
+713,Atendente de Telemarketing,Peabiru,PR,27,135,132,567,-555,22,1042,124,521,D
+844,Atendente de Telemarketing,Butiá,RS,44,0,0,0,0,0,0,0,0,D
+133,Diretor de compras,Gameleiras,MG,33,124,22,668,-117,11,1421,157,843,D
+313,Atendente de Telemarketing,Carneirinho,MG,61,125,75,681,-410,12,1608,213,1162,D
+189,Motorista de aplicativo,Coroados,SP,21,134,42,496,-156,7,1042,210,774,D
+767,Motorista de aplicativo,Ribeirão Preto,SP,44,312,67,1602,-347,16,2523,259,1327,D
+224,Assistente comercial,Campo Grande,MS,49,117,70,574,-346,16,891,73,369,D
+898,Assistente comercial,Cláudio,MG,41,146,62,712,-307,10,942,129,630,D
+825,Motorista de aplicativo,Rio Azul,PR,21,116,42,347,-123,13,790,174,518,D
+645,Atendente de Telemarketing,Peabiru,PR,27,88,78,593,-532,14,2038,228,1551,D
+804,Atendente de Telemarketing,São Miguel Das Missões,MS,40,134,31,611,-141,10,1164,175,793,D
+128,Assistente comercial,Tremembé,SP,26,147,68,704,-331,6,1251,137,651,D
+481,Assistente comercial,Arealva,SP,43,209,44,793,-166,8,1003,90,342,D
+677,Atendente de Telemarketing,Nova Odessa,SP,23,0,0,0,0,0,0,0,0,D
+154,Diretor de compras,Divisópolis,MG,28,123,66,660,-353,11,1351,160,851,D
+953,Atendente de Telemarketing,Cornélio Procópio,PR,38,230,41,1787,-313,12,3051,191,1456,D
+61,Atendente de Telemarketing,Nioaque,MS,43,0,0,0,0,0,0,0,0,D
+461,Diretor de compras,Jacutinga,RS,26,89,145,439,-715,7,938,123,602,D
+939,Motorista de aplicativo,São José do Ouro,RS,53,142,19,1408,-186,14,2366,148,1484,D
+537,Assistente comercial,Penápolis,SP,57,188,72,1017,-385,11,1469,163,882,D
+424,Gestor de vendas,Rio de Janeiro,RJ,38,120,40,389,-132,12,516,66,217,D
+424,Diretor de compras,Jauru,MT,55,0,0,0,0,0,0,0,0,D
+472,Atendente de Telemarketing,Tesouro,MT,25,114,106,558,-521,12,1172,148,719,D
+67,Atendente de Telemarketing,Guaraci,PR,39,42,45,208,-225,13,1540,306,1507,D
+690,Diretor de compras,Santana da Vargem,MG,21,130,45,690,-240,11,1956,294,1541,D
+937,Assistente comercial,Taquara,RS,41,191,35,927,-173,12,1418,170,823,D
+519,Diretor de compras,Mirassol,SP,18,0,0,0,0,0,0,0,0,D
+34,Assistente comercial,Rosário do Sul,RS,35,82,128,444,-697,12,644,53,288,D
+998,Diretor de compras,Deodápolis,MS,42,110,25,854,-202,11,2038,174,1338,D
+488,Diretor de compras,Conchas,SP,47,175,85,951,-449,20,1943,216,1154,D
+382,Motorista de aplicativo,Reserva,PR,34,118,157,692,-906,19,2101,269,1568,D
+166,Assistente comercial,Juquiá,SP,31,124,74,645,-386,10,1231,158,829,D
+378,Assistente comercial,Piraí do Sul,PR,39,167,59,991,-351,11,2125,206,1236,D
+815,Assistente comercial,Juscimeira,MT,31,78,112,276,-393,9,951,215,758,D
+283,Diretor de compras,Cândido Rodrigues,SP,42,60,79,396,-511,10,1507,206,1331,D
+24,Assistente comercial,Nova Boa Vista,RS,32,136,14,626,-62,10,1039,125,573,D
+168,Assistente comercial,Piquete,SP,46,155,148,583,-549,12,1199,219,824,D
+848,Diretor de compras,Braganey,PR,32,64,57,492,-440,9,1987,242,1869,D
+453,Diretor de compras,Nilópolis,RJ,39,42,56,315,-412,14,925,86,633,D
+465,Diretor de compras,Engenheiro Coelho,SP,47,132,19,999,-144,13,1942,150,1148,D
+714,Assistente comercial,Aparecida D´oeste,SP,54,142,77,529,-285,8,712,64,236,D
+606,Assistente comercial,Tupi Paulista,SP,59,99,47,965,-459,12,1910,131,1291,D
+494,Diretor de compras,Sebastianópolis do Sul,SP,30,145,111,488,-381,10,878,164,556,D
+604,Assistente comercial,Cajuru,SP,36,0,0,0,0,0,0,0,0,D
+203,Motorista de aplicativo,Portelândia,GO,41,147,210,572,-825,17,1866,348,1362,D
+10,Assistente comercial,Iperó,SP,23,151,17,426,-48,11,784,157,446,D
+164,Assistente comercial,Jataí,GO,35,0,0,0,0,0,0,0,0,D
+603,Diretor de compras,Caiabu,SP,29,0,0,0,0,0,0,0,0,D
+926,Diretor de compras,Campo Largo,PR,27,0,0,0,0,0,0,0,0,D
+456,Atendente de Telemarketing,Pontal do Paraná,PR,48,137,87,488,-304,12,876,145,519,D
+272,Motorista de aplicativo,Estrela do Indaiá,MG,37,126,35,436,-120,11,869,154,533,D
+888,Atendente de Telemarketing,Ivaté,PR,27,79,69,355,-315,5,495,128,584,D
+518,Diretor de compras,São José do Rio Preto,SP,35,152,32,1029,-214,9,1954,204,1366,D
+493,Motorista de aplicativo,Antônio Prado,RS,30,173,51,1068,-309,16,2371,249,1530,D
+863,Assistente comercial,Urânia,SP,30,87,56,757,-484,7,1107,56,480,D
+468,Diretor de compras,Esmeralda,RS,39,105,86,498,-409,13,1408,212,999,D
+779,Atendente de Telemarketing,Suzanápolis,SP,49,93,61,380,-245,9,875,166,673,D
+535,Diretor de compras,Itariri,SP,60,172,43,874,-220,9,1588,171,864,D
+323,Diretor de compras,Araçoiaba da Serra,SP,39,194,162,1366,-1129,17,2851,254,1769,D
+958,Motorista de aplicativo,Torre de Pedra,SP,26,175,33,612,-119,14,1505,286,997,D
+648,Diretor de compras,Caarapó,MS,45,57,32,299,-160,10,650,89,448,D
+142,Diretor de compras,Porto Barreiro,PR,21,0,0,0,0,0,0,0,0,D
+544,Diretor de compras,Comodoro,MT,42,86,119,312,-432,9,880,201,739,D
+558,Assistente comercial,Quadra,SP,27,0,0,0,0,0,0,0,0,D
+396,Assistente comercial,Aperibé,RJ,41,161,60,821,-310,8,1285,152,790,D
+860,Motorista de aplicativo,Paula Freitas,PR,35,67,102,442,-684,8,1410,162,1069,D
+286,Atendente de Telemarketing,Barra do Garças,MT,47,0,0,0,0,0,0,0,0,D
+950,Atendente de Telemarketing,Nova Xavantina,MT,50,92,47,515,-259,10,1563,231,1303,D
+375,Diretor de compras,Riozinho,RS,36,117,96,556,-448,10,1210,160,748,D
+56,Diretor de compras,Floraí,PR,26,0,0,0,0,0,0,0,0,D
+687,Diretor de compras,Fontoura Xavier,RS,48,127,84,675,-450,9,1246,141,753,D
+877,Atendente de Telemarketing,Boa Esperança do Sul,SP,19,98,102,395,-418,12,1101,212,864,D
+565,Atendente de Telemarketing,São Pedro do Butiá,RS,31,151,159,687,-722,15,1584,219,998,D
+947,Assistente comercial,Nova Prata do Iguaçu,PR,42,0,0,0,0,0,0,0,0,D
+589,Motorista de aplicativo,Nortelândia,MT,31,99,128,337,-443,15,596,107,370,D
+90,Gestor de vendas,Tiradentes do Sul,RS,22,208,58,794,-222,19,1625,254,965,D
+906,Diretor de compras,Cornélio Procópio,PR,38,166,115,572,-395,12,1420,278,956,D
+600,Motorista de aplicativo,Barro Alto,GO,41,196,32,1187,-195,10,1961,152,929,D
+77,Diretor de compras,São Pedro do Turvo,SP,24,281,50,1291,-235,15,2538,309,1400,D
+221,Atendente de Telemarketing,Fazenda Rio Grande,PR,25,119,47,959,-374,12,2057,165,1351,D
+386,Atendente de Telemarketing,Ferraz de Vasconcelos,SP,45,213,29,947,-128,14,1425,159,717,D
+56,Assistente comercial,Carapicuíba,SP,60,118,47,436,-173,12,609,66,245,D
+242,Diretor de compras,São Pedro da Cipa,MT,18,76,136,328,-581,10,1159,213,910,D
+181,Diretor de compras,Iguatemi,MS,46,228,43,1204,-227,15,1867,142,763,D
+880,Entregador de aplicativo,Sapiranga,RS,34,88,40,731,-321,12,1721,160,1292,D
+930,Diretor de compras,Cambará do Sul,RS,33,126,30,690,-162,13,1411,182,1014,D
+425,Assistente comercial,Araraquara,SP,22,0,0,0,0,0,0,0,0,D
+80,Gestor de vendas,Piraí,RJ,23,0,0,0,0,0,0,0,0,D
+581,Assistente comercial,Santa Maria Madalena,RJ,40,51,16,218,-68,12,864,172,725,D
+46,Diretor de compras,Tambaú,SP,39,203,15,1315,-99,11,2151,148,947,D
+167,Atendente de Telemarketing,Guzolândia,SP,46,145,76,556,-295,16,1323,219,852,D
+624,Gestor de vendas,Turmalina,SP,23,102,58,964,-552,11,2319,174,1662,D
+865,Assistente comercial,Mundo Novo,GO,63,83,89,382,-414,9,1271,269,1242,D
+208,Assistente comercial,Itaperuna,RJ,41,142,99,570,-399,19,1276,187,753,D
+829,Assistente comercial,Cornélio Procópio,PR,18,0,0,0,0,0,0,0,0,D
+853,Diretor de compras,Tatuí,SP,35,0,0,0,0,0,0,0,0,D
+248,Gestor de vendas,Barra Longa,MG,31,49,49,242,-246,14,1008,185,940,D
+597,Gestor de vendas,Lucélia,SP,42,101,46,551,-252,10,1696,228,1244,D
+712,Entregador de aplicativo,Nova Pádua,RS,39,126,90,543,-391,11,1261,219,955,D
+429,Diretor de compras,Tarumã,SP,19,127,101,473,-375,11,1133,235,862,D
+840,Assistente comercial,Cravinhos,SP,33,0,0,0,0,0,0,0,0,D
+559,Assistente comercial,Ortigueira,PR,45,43,16,278,-101,12,1052,179,1137,D
+501,Entregador de aplicativo,Itaberaí,GO,21,137,68,786,-389,15,1660,197,1127,D
+347,Motorista de aplicativo,Santa Cruz do Rio Pardo,SP,43,276,50,1334,-243,18,2389,284,1372,D
+669,Motorista de aplicativo,Divisa Alegre,MG,52,177,38,665,-145,14,1096,155,581,D
+923,Assistente comercial,Santa Terezinha de Itaipu,PR,56,72,101,283,-392,13,729,161,630,D
+529,Diretor de compras,Santa Branca,SP,42,135,14,632,-65,11,1242,159,747,D
+160,Atendente de Telemarketing,Nova Glória,GO,42,86,60,938,-659,7,1848,138,1531,D
+574,Assistente comercial,Cristal do Sul,RS,38,173,33,1516,-285,11,2803,200,1673,D
+356,Entregador de aplicativo,Água Boa,MT,50,96,101,499,-524,16,1341,189,988,D
+526,Assistente comercial,Nova Mutum,MT,34,33,59,205,-377,13,1732,267,1671,D
+306,Diretor de compras,Descalvado,SP,23,89,115,259,-342,15,852,254,749,D
+488,Gestor de vendas,Anaurilândia,MS,43,59,21,234,-86,14,884,180,722,D
+328,Assistente comercial,Fernão,SP,35,125,165,1066,-1401,23,3383,311,2634,D
+271,Gestor de vendas,Porto Estrela,MT,49,121,58,606,-296,10,1725,263,1342,D
+565,Atendente de Telemarketing,Colinas,RS,40,35,22,231,-144,9,899,184,1216,D
+307,Assistente comercial,Arroio do Tigre,RS,33,130,15,775,-90,8,1590,214,1263,D
+300,Gestor de vendas,Ribeirãozinho,MT,37,0,0,0,0,0,0,0,0,D
+171,Motorista de aplicativo,Jacuizinho,RS,44,153,32,498,-107,13,1186,245,806,D
+171,Atendente de Telemarketing,Iapu,MG,53,129,39,469,-139,18,1070,177,652,D
+611,Gestor de vendas,Paranatinga,MT,39,133,48,442,-159,14,1003,220,726,D
+816,Atendente de Telemarketing,Barra do Garças,MT,26,122,24,570,-112,11,1053,140,654,D
+640,Entregador de aplicativo,Itapecerica da Serra,SP,39,106,65,549,-342,11,1061,194,1000,D
+57,Diretor de compras,Rincão,SP,54,187,52,927,-261,16,1850,232,1160,D
+914,Motorista de aplicativo,Itarumã,GO,48,128,89,1313,-901,20,3186,219,2226,D
+493,Assistente comercial,Cláudia,MT,26,125,118,608,-570,11,1343,172,836,D
+599,Motorista de aplicativo,Bofete,SP,35,237,37,802,-124,8,1278,222,751,D
+686,Atendente de Telemarketing,Tapes,RS,53,67,20,312,-90,12,1334,279,1279,D
+824,Gestor de vendas,Pedregulho,SP,52,159,76,747,-362,12,1616,209,996,D
+894,Atendente de Telemarketing,Natividade da Serra,SP,45,184,269,853,-1247,21,2652,452,2130,D
+982,Atendente de Telemarketing,Cotia,SP,20,0,0,0,0,0,0,0,0,D
+287,Entregador de aplicativo,Cruz Machado,PR,40,0,0,0,0,0,0,0,0,D
+281,Atendente de Telemarketing,Feliz Natal,MT,34,193,28,566,-79,16,960,155,444,D
+537,Atendente de Telemarketing,Espigão Alto do Iguaçu,PR,56,114,43,414,-158,10,1071,200,725,D
+658,Gestor de vendas,Itacarambi,MG,36,0,0,0,0,0,0,0,0,D
+539,Motorista de aplicativo,Curvelândia,MT,43,132,111,1409,-1191,13,2899,165,1743,D
+513,Atendente de Telemarketing,Guairaçá,PR,31,46,14,356,-105,7,1988,230,1765,D
+458,Diretor de compras,Glória D´oeste,MT,58,0,0,0,0,0,0,0,0,D
+671,Motorista de aplicativo,Luciára,SP,27,242,39,822,-134,22,2176,435,1483,D
+964,Assistente comercial,Urucuia,MG,62,94,75,466,-367,16,1230,179,893,D
+469,Atendente de Telemarketing,Douradina,PR,37,37,34,149,-144,12,380,69,289,D
+61,Assistente comercial,Amambaí,MS,36,158,65,563,-235,11,1174,227,796,D
+145,Assistente comercial,Douradina,PR,26,33,29,133,-122,11,1104,258,1059,D
+736,Atendente de Telemarketing,Pinto Bandeira,RS,42,106,135,427,-548,12,952,141,573,D
+534,Diretor de compras,Rio Das Flores,RJ,64,0,0,0,0,0,0,0,0,D
+801,Diretor de compras,Morrinhos do Sul,RS,36,86,72,638,-539,9,1861,210,1568,D
+217,Atendente de Telemarketing,Italva,RJ,38,94,125,464,-613,7,1064,137,670,D
+867,Diretor de compras,Alcinópolis,MS,29,80,82,602,-616,9,1489,147,1125,D
+617,Atendente de Telemarketing,Turvânia,GO,59,136,88,788,-504,9,1349,150,865,D
+312,Diretor de compras,Nantes,SP,26,59,92,197,-313,13,614,146,490,D
+25,Assistente comercial,Populina,SP,37,166,103,770,-478,11,1345,183,847,D
+78,Assistente comercial,Ribeirão Preto,SP,35,105,82,582,-458,14,1604,206,1151,D
+816,Atendente de Telemarketing,Apiacás,MT,41,80,77,407,-383,10,963,139,710,D
+258,Atendente de Telemarketing,Marilena,PR,59,158,214,710,-948,17,1789,268,1192,D
+84,Gestor de vendas,Porto Ferreira,SP,23,162,32,859,-166,12,1687,193,1009,D
+518,Atendente de Telemarketing,Confresa,MT,28,150,53,711,-251,11,1474,189,887,D
+395,Gestor de vendas,Aporé,GO,18,0,0,0,0,0,0,0,0,D
+432,Entregador de aplicativo,Rancho Alegre D´oeste,PR,42,99,90,922,-843,14,1395,69,631,D
+84,Assistente comercial,Porto Murtinho,MS,37,87,123,305,-427,7,654,160,551,D
+328,Motorista de aplicativo,Rancho Alegre D´oeste,PR,51,121,17,404,-55,11,980,201,660,D
+482,Motorista de aplicativo,Quissamã,RJ,35,125,95,564,-431,11,1705,312,1404,D
+452,Motorista de aplicativo,Colorado,RS,43,88,98,313,-346,14,849,174,623,D
+373,Motorista de aplicativo,Anaurilândia,MS,40,0,0,0,0,0,0,0,0,D
+561,Diretor de compras,Alto Boa Vista,MT,29,31,37,148,-183,12,866,179,847,D
+265,Diretor de compras,Floraí,PR,21,0,0,0,0,0,0,0,0,D
+739,Assistente comercial,Alto Feliz,RS,41,0,0,0,0,0,0,0,0,D
+129,Assistente comercial,Fernão,SP,27,0,0,0,0,0,0,0,0,D
+951,Atendente de Telemarketing,Monteiro Lobato,SP,60,158,154,869,-859,14,1907,231,1291,D
+167,Assistente comercial,Arandu,SP,30,78,77,359,-351,9,1269,221,1004,D
+264,Gestor de vendas,Cedral,SP,50,198,57,1112,-312,11,2277,254,1404,D
+881,Assistente comercial,Godoy Moreira,PR,19,52,32,232,-143,15,1255,237,1069,D
+371,Gestor de vendas,Lucianópolis,SP,22,107,66,372,-222,14,1161,252,876,D
+211,Diretor de compras,Cruz Machado,PR,46,112,51,555,-254,13,1260,174,868,D
+977,Atendente de Telemarketing,Monte Alegre do Sul,SP,18,109,104,534,-497,10,1454,218,1047,D
+945,Assistente comercial,Barretos,SP,52,71,91,499,-644,12,1772,241,1683,D
+796,Diretor de compras,Barão de Melgaço,MT,36,138,29,725,-155,10,1653,197,1021,D
+822,Assistente comercial,Miracema,RJ,36,189,25,752,-100,11,1286,159,629,D
+207,Motorista de aplicativo,Ivaté,PR,57,171,60,1367,-481,12,2446,155,1252,D
+824,Diretor de compras,Nhandeara,SP,43,105,114,482,-542,12,1128,152,720,D
+955,Entregador de aplicativo,Salto Grande,SP,36,124,44,893,-314,13,1930,160,1144,D
+878,Diretor de compras,Igaraçu do Tietê,SP,57,42,25,239,-143,12,1438,236,1316,D
+930,Diretor de compras,Jauru,MT,33,89,62,320,-217,9,752,155,556,D
+573,Motorista de aplicativo,Espírito Santo do Pinhal,SP,23,0,0,0,0,0,0,0,0,D
+828,Entregador de aplicativo,Corguinho,MS,27,113,42,1042,-381,10,2751,212,1965,D
+958,Assistente comercial,Aguaí,SP,59,211,34,1074,-168,11,1658,162,822,D
+249,Gestor de vendas,Salto de Pirapora,SP,36,125,68,821,-447,13,2034,217,1432,D
+247,Assistente comercial,Eugênio de Castro,RS,51,120,100,692,-572,16,2314,300,1733,D
+711,Gestor de vendas,Esmeralda,RS,25,96,46,709,-329,6,855,69,518,D
+225,Assistente comercial,Uru,SP,49,0,0,0,0,0,0,0,0,D
+717,Gestor de vendas,Bom Jesus,RS,45,78,45,343,-196,7,473,49,210,D
+662,Assistente comercial,Carmo do Rio Claro,MG,28,71,111,235,-367,17,717,183,603,D
+548,Diretor de compras,Luciára,SP,44,140,54,480,-184,11,639,63,217,D
+891,Gestor de vendas,Machacalis,MG,32,70,6,319,-25,13,1344,239,1077,D
+327,Gestor de vendas,Paranatinga,MT,40,105,49,516,-239,12,1046,133,638,D
+589,Assistente comercial,Pedra Bela,SP,39,104,30,480,-141,14,1137,157,726,D
+577,Diretor de compras,Potim,SP,59,0,0,0,0,0,0,0,0,D
+960,Atendente de Telemarketing,Douradoquara,MG,39,104,38,375,-136,11,766,149,536,D
+230,Assistente comercial,Novais,SP,40,157,72,858,-399,12,1747,229,1234,D
+974,Diretor de compras,Conquista D´oeste,MT,31,44,38,280,-247,7,1672,244,1530,D
+286,Assistente comercial,Morro Agudo,SP,55,93,143,430,-678,13,1220,230,1079,D
+400,Assistente comercial,Prados,MG,18,171,76,873,-390,12,1701,177,916,D
+339,Motorista de aplicativo,Caiuá,SP,53,125,85,647,-443,9,1229,144,751,D
+850,Atendente de Telemarketing,Embu,SP,18,123,40,1122,-364,12,1616,68,618,D
+934,Motorista de aplicativo,Capitão Leônidas Marques,PR,26,170,67,745,-289,11,1188,165,723,D
+783,Atendente de Telemarketing,Boracéia,SP,64,74,82,325,-360,9,1215,224,972,D
+828,Diretor de compras,Santa Vitória,MG,60,144,21,706,-105,5,725,72,349,D
+953,Assistente comercial,Pracinha,SP,41,151,85,662,-376,11,1468,262,1173,D
+391,Atendente de Telemarketing,Corumbataí,SP,39,0,0,0,0,0,0,0,0,D
+2,Atendente de Telemarketing,Terenos,MS,52,144,75,1253,-681,9,2728,193,1694,D
+798,Assistente comercial,Goiânia,GO,43,102,38,614,-224,11,826,54,320,D
+335,Diretor de compras,Turiúba,SP,28,80,101,409,-523,7,988,142,727,D
+142,Diretor de compras,Emilianópolis,SP,44,120,72,361,-215,10,632,114,344,D
+105,Entregador de aplicativo,Itirapuã,SP,37,135,96,615,-444,14,1171,140,635,D
+132,Gestor de vendas,Eldorado,MS,43,90,51,330,-189,11,771,125,465,D
+595,Motorista de aplicativo,Braga,RS,58,70,62,357,-316,11,1218,205,1056,D
+152,Assistente comercial,Iacri,SP,26,143,49,661,-225,9,1174,141,662,D
+592,Diretor de compras,Alpestre,RS,44,0,0,0,0,0,0,0,0,D
+833,Atendente de Telemarketing,Imbaú,PR,32,100,23,342,-80,13,475,48,167,D
+785,Diretor de compras,Bertioga,SP,48,45,5,421,-46,4,959,115,1055,D
+421,Atendente de Telemarketing,Colômbia,SP,41,89,64,636,-461,6,1119,116,831,D
+260,Diretor de compras,Porciúncula,RJ,45,107,10,844,-77,8,1618,128,1007,D
+969,Assistente comercial,Bom Jesus do Araguaia,MT,27,79,26,382,-124,6,661,114,558,D
+804,Diretor de compras,Pontes e Lacerda,MT,29,85,55,443,-292,5,947,143,758,D
+41,Motorista de aplicativo,Ilhabela,SP,38,0,0,0,0,0,0,0,0,D
+147,Atendente de Telemarketing,Monte Castelo,SP,36,41,57,176,-244,5,262,42,172,D
+382,Motorista de aplicativo,Buriti de Goiás,GO,28,0,0,0,0,0,0,0,0,D
+310,Assistente comercial,Pinhalzinho,SP,37,0,0,0,0,0,0,0,0,D
+557,Motorista de aplicativo,Curvelândia,MT,31,0,0,0,0,0,0,0,0,D
+346,Diretor de compras,São Miguel Arcanjo,SP,55,94,34,390,-135,6,812,147,603,D
+670,Assistente comercial,Rio Bonito,RJ,41,57,47,269,-222,5,575,124,599,D
+376,Atendente de Telemarketing,Santa Rosa da Serra,MG,45,79,60,762,-564,6,1726,133,1259,D
+146,Gestor de vendas,Lagoa Dos Três Cantos,RS,34,48,55,243,-272,4,578,112,554,D
+814,Assistente comercial,Brasilândia do Sul,PR,18,86,56,305,-197,8,503,86,298,D
+867,Atendente de Telemarketing,Lontra,MG,58,0,0,0,0,0,0,0,0,D
+714,Diretor de compras,Vila Rica,MT,22,51,48,181,-168,7,514,126,432,D
+436,Atendente de Telemarketing,Lucianópolis,SP,40,0,0,0,0,0,0,0,0,D
+299,Motorista de aplicativo,Areias,SP,27,25,6,86,-20,5,226,75,252,D
+143,Assistente comercial,Tangará da Serra,MT,23,62,57,446,-401,5,565,87,623,D
+49,Diretor de compras,Cruzália,SP,45,60,47,199,-157,4,410,86,287,D
+286,Assistente comercial,Pratânia,SP,22,0,0,0,0,0,0,0,0,D
+389,Assistente comercial,Paranapanema,SP,38,27,44,175,-276,5,518,70,438,D
+774,Diretor de compras,Itaguari,GO,24,51,15,404,-118,5,1007,94,750,D
+205,Diretor de compras,Alfredo Marcondes,SP,54,0,0,0,0,0,0,0,0,D
+301,Assistente comercial,Nova Olímpia,MT,37,49,32,476,-301,7,958,79,765,D
+792,Atendente de Telemarketing,Nova Friburgo,RJ,57,19,10,63,-32,5,247,67,219,D
+390,Assistente comercial,Cosmorama,SP,41,46,13,269,-79,4,535,65,383,D
+272,Gestor de vendas,Boracéia,SP,33,37,36,281,-279,2,560,63,484,D
+280,Diretor de compras,Aimorés,MG,39,0,0,0,0,0,0,0,0,D
+940,Atendente de Telemarketing,Campo Limpo Paulista,SP,47,45,44,246,-237,3,313,49,266,D
+627,Diretor de compras,Rosário do Sul,RS,49,50,39,255,-194,4,383,51,251,D
+97,Atendente de Telemarketing,Carmo de Minas,MG,27,0,0,0,0,0,0,0,0,D
+13,Diretor de compras,Palmital,SP,34,67,19,359,-102,2,520,52,277,D
+673,Assistente comercial,Ilha Solteira,SP,30,29,32,209,-232,3,297,27,191,D
+146,Diretor de compras,Matupá,MT,49,22,13,154,-94,2,249,47,330,D
+784,Atendente de Telemarketing,Barra do Garças,MT,49,9,9,29,-27,2,96,41,129,D
+6,Entregador de aplicativo,Caraguatatuba,SP,38,29,28,133,-124,1,88,36,160,D
+444,Entregador de aplicativo,Bofete,SP,38,40,5,121,-17,3,176,32,100,D
+970,Diretor de compras,Nova Olímpia,PR,58,15,17,58,-68,1,161,41,161,D
+987,Assistente comercial,Itapira,SP,32,0,0,0,0,0,0,0,0,D
+314,Motorista de aplicativo,Birigui,SP,32,0,0,0,0,0,0,0,0,D
+239,Entregador de aplicativo,Colorado,RS,22,38,11,175,-50,2,237,27,122,D
+453,Assistente comercial,Aparecida do Taboado,MS,18,14,17,56,-68,2,86,33,137,D
+270,Diretor de compras,Mariápolis,SP,41,18,6,84,-31,1,114,17,83,D
+807,Motorista de aplicativo,Poconé,MT,18,18,8,91,-41,1,46,21,99,D
+871,Motorista de aplicativo,Torrinha,SP,54,5,1,21,-4,1,100,38,151,D
+16,Diretor de compras,Registro,SP,40,20,15,61,-45,1,50,13,41,D
+379,Motorista de aplicativo,Bastos,SP,25,17,11,84,-52,2,129,38,179,D
+257,Diretor de compras,Salesópolis,SP,41,19,14,66,-49,0,0,28,97,D
+220,Gestor de vendas,Guarani de Goiás,GO,33,11,5,75,-35,1,68,21,148,D
+757,Diretor de compras,Rio Claro,SP,55,8,5,39,-25,0,0,16,81,D
+700,Atendente de Telemarketing,Imbaú,PR,37,8,15,37,-65,1,69,15,67,D
+947,Gestor de vendas,Nova Marilândia,MT,57,10,2,46,-11,1,52,11,56,D
+654,Motorista de aplicativo,Valparaíso,SP,23,6,8,22,-28,1,19,15,54,D
+909,Diretor de compras,Mombuca,SP,54,4,3,20,-15,1,23,18,98,D
+781,Gestor de vendas,São Gotardo,MG,33,0,0,0,0,0,0,0,0,D
+697,Motorista de aplicativo,Boa Esperança do Iguaçu,PR,62,9,0,34,0,0,0,6,24,D
+255,Diretor de compras,Dona Francisca,RS,60,11,0,72,0,0,0,8,48,D
+766,Diretor de compras,Fernão,SP,38,0,0,0,0,0,0,0,0,D
+385,Assistente comercial,Sete Quedas,MS,19,0,0,0,0,0,0,0,0,D
+714,Atendente de Telemarketing,Coronel Sapucaia,MS,41,0,0,0,0,0,0,0,0,D
+708,Atendente de Telemarketing,Paty do Alferes,RJ,55,0,0,0,0,0,0,0,0,D
+155,Motorista de aplicativo,Alto Boa Vista,MT,38,30,39,342,-431,15,1017,66,755,F
+10,Gestor de vendas,Santa Carmem,MT,29,16,45,135,-389,16,709,73,618,F
+222,Gestor de vendas,Carlinda,MT,31,76,43,658,-366,11,879,32,273,F
+871,Gestor de vendas,Rio Branco,MT,37,47,30,421,-272,20,2028,183,1665,F
+66,Motorista de aplicativo,Vila Rica,MT,35,37,34,367,-331,15,922,73,711,F
+583,Entregador de aplicativo,Salvador do Sul,RS,34,0,0,0,0,0,0,0,0,F
+106,Motorista de aplicativo,Caiçara,RS,41,20,34,174,-314,16,567,48,429,F
+59,Gestor de vendas,Cerro Grande do Sul,RS,33,19,43,171,-395,10,576,47,431,F
+668,Diretor de compras,Vista Gaúcha,RS,34,94,94,873,-855,18,1484,71,649,F
+933,Diretor de compras,São José do Xingu,MT,37,38,54,227,-315,24,612,74,428,F
+973,Motorista de aplicativo,União da Serra,RS,36,36,43,348,-420,16,886,65,627,F
+693,Diretor de compras,Barbosa Ferraz,PR,32,39,62,332,-528,21,853,64,547,F
+399,Entregador de aplicativo,São Borja,RS,38,9,41,92,-411,15,1158,115,1149,F
+549,Motorista de aplicativo,Rondolândia,MT,35,97,172,848,-1523,22,1584,92,801,F
+569,Motorista de aplicativo,Diamantino,MT,32,10,30,74,-218,12,419,52,365,F
+963,Motorista de aplicativo,Sapiranga,RS,32,57,29,633,-329,21,1416,75,830,F
+56,Entregador de aplicativo,Santa Cruz da Esperança,SP,41,17,29,147,-257,11,1095,113,976,F
+54,Diretor de compras,Cornélio Procópio,PR,41,46,150,197,-649,26,482,72,315,F
+847,Diretor de compras,Condor,RS,41,9,32,57,-201,8,239,32,201,F
+34,Diretor de compras,Porto Barreiro,PR,34,10,20,92,-173,13,436,43,376,F
+27,Motorista de aplicativo,Barra do Guarita,RS,31,113,86,603,-457,17,1569,191,1016,F
+808,Entregador de aplicativo,Bom Princípio,RS,35,34,33,367,-351,17,1249,90,946,F
+171,Motorista de aplicativo,Mirandópolis,SP,34,29,27,278,-266,15,838,64,617,F
+742,Motorista de aplicativo,Alto Feliz,RS,43,23,32,112,-154,17,357,52,254,F
+286,Diretor de compras,Guaraci,PR,29,65,211,566,-1843,24,1233,82,695,F
+929,Motorista de aplicativo,Sapiranga,RS,34,87,72,400,-338,16,1016,150,701,F
+477,Entregador de aplicativo,Jaquirana,RS,30,18,38,129,-264,15,496,64,449,F
+91,Gestor de vendas,Campos Borges,RS,32,22,38,217,-371,17,776,60,596,F
+934,Atendente de Telemarketing,Novo São Joaquim,MT,44,30,34,161,-176,20,499,67,359,F
+31,Motorista de aplicativo,Vista Gaúcha,RS,39,102,103,569,-573,19,865,62,345,F
+21,Motorista de aplicativo,São Nicolau,RS,30,37,32,140,-119,15,307,48,177,F
+261,Motorista de aplicativo,Pontal do Paraná,PR,34,48,25,399,-208,13,1698,163,1362,F
+356,Entregador de aplicativo,Alegria,RS,35,54,100,380,-715,19,1619,183,1301,F
+654,Motorista de aplicativo,Dois Irmãos,RS,32,34,33,264,-271,23,2096,238,1928,F
+510,Assistente comercial,Quatro Irmãos,RS,32,8,22,77,-210,7,344,29,286,F
+69,Entregador de aplicativo,Santa Cruz do Xingu,MT,31,20,45,76,-168,15,282,60,225,F
+568,Motorista de aplicativo,Esperança do Sul,RS,42,35,118,254,-865,15,611,60,441,F
+492,Gestor de vendas,Santa Carmem,MT,26,14,25,135,-243,10,418,35,330,F
+547,Atendente de Telemarketing,Muitos Capões,RS,34,69,41,520,-306,13,764,40,304,F
+867,Motorista de aplicativo,Presidente Lucena,RS,36,15,29,144,-272,8,488,39,365,F
+535,Motorista de aplicativo,Motuca,SP,41,36,109,296,-890,14,655,56,477,F
+572,Gestor de vendas,Herval,RS,33,95,62,903,-600,20,1592,83,787,F
+238,Motorista de aplicativo,Mata,RS,31,85,71,659,-553,16,1131,66,520,F
+30,Motorista de aplicativo,Campina da Lagoa,PR,41,0,0,0,0,0,0,0,0,F
+16,Motorista de aplicativo,São José do Rio Claro,MT,30,67,140,718,-1491,15,1217,59,616,F
+923,Gestor de vendas,Aceguá,RS,30,15,29,120,-260,12,876,101,833,F
+469,Diretor de compras,Bela Vista da Caroba,PR,34,0,0,0,0,0,0,0,0,F
+488,Entregador de aplicativo,Pato Branco,PR,35,35,42,236,-284,17,701,77,527,F
+845,Atendente de Telemarketing,Tapurah,MT,39,18,21,149,-176,10,588,53,456,F
+999,Gestor de vendas,Salto do Céu,MT,37,44,23,154,-84,18,354,63,224,F
+583,Motorista de aplicativo,Sobradinho,RS,32,59,243,512,-2052,27,1162,78,667,F
+274,Gestor de vendas,São José do Norte,RS,27,13,47,114,-401,16,1184,127,1116,F
+712,Motorista de aplicativo,Presidente Lucena,RS,36,110,87,879,-698,17,1991,149,1202,F
+620,Atendente de Telemarketing,Marcelino Ramos,RS,44,17,39,118,-255,16,425,49,319,F
+496,Motorista de aplicativo,Planalto da Serra,MT,37,46,32,361,-257,20,1513,157,1255,F
+149,Gestor de vendas,Erval Seco,RS,30,26,103,97,-387,11,701,183,679,F
+793,Gestor de vendas,Espírito Santo do Turvo,SP,34,31,29,313,-286,18,1729,148,1475,F
+983,Gestor de vendas,São Paulo Das Missões,RS,34,25,20,211,-156,12,569,50,389,F
+508,Gestor de vendas,São Francisco de Paula,RS,41,17,47,150,-421,15,729,63,589,F
+513,Motorista de aplicativo,Bagé,RS,30,28,35,299,-360,14,934,65,685,F
+588,Motorista de aplicativo,Porangaba,SP,33,33,37,331,-355,17,866,59,582,F
+997,Gestor de vendas,Vista Gaúcha,RS,41,23,70,211,-650,20,823,69,648,F
+942,Atendente de Telemarketing,Novo Santo Antônio,MT,35,39,38,230,-215,20,1644,247,1489,F
+701,Gestor de vendas,Luciára,RS,35,30,67,207,-490,27,846,98,706,F
+506,Motorista de aplicativo,Vera Cruz,SP,28,25,40,289,-462,16,835,51,582,F
+64,Atendente de Telemarketing,Pinhal de São Bento,PR,40,19,42,185,-390,19,906,81,760,F
+867,Motorista de aplicativo,Pelotas,RS,27,47,108,197,-449,17,494,74,313,F
+966,Entregador de aplicativo,Pinheiral,RS,32,26,32,186,-230,13,554,57,397,F
+199,Gestor de vendas,Cláudia,MT,40,27,61,223,-541,18,2014,223,1919,F
+704,Motorista de aplicativo,Pilar do Sul,SP,44,43,27,269,-168,19,765,86,541,F
+871,Motorista de aplicativo,Westfalia,RS,34,18,43,108,-249,15,360,48,287,F
+791,Assistente comercial,Astorga,PR,29,30,27,280,-248,16,723,51,472,F
+55,Atendente de Telemarketing,Marília,SP,27,13,30,107,-249,12,416,46,376,F
+524,Atendente de Telemarketing,Cândido Rodrigues,SP,39,7,41,59,-342,16,539,61,514,F
+342,Motorista de aplicativo,Dom Feliciano,RS,35,18,40,121,-259,17,472,60,378,F
+227,Entregador de aplicativo,Pinheiro Machado,RS,22,75,65,241,-209,18,423,60,195,F
+991,Entregador de aplicativo,Campinas do Sul,RS,32,6,25,51,-229,8,328,38,349,F
+492,Entregador de aplicativo,Ibirapuitã,RS,44,13,52,45,-179,21,806,238,821,F
+51,Motorista de aplicativo,Guaraci,PR,26,7,41,62,-381,15,477,48,453,F
+60,Atendente de Telemarketing,São José do Rio Claro,MT,39,15,22,52,-78,14,223,54,194,F
+799,Motorista de aplicativo,Osvaldo Cruz,SP,28,38,56,333,-503,11,611,34,305,F
+989,Atendente de Telemarketing,Constantina,RS,33,14,22,115,-189,10,499,52,440,F
+70,Entregador de aplicativo,Cruz Alta,RS,33,17,81,150,-684,10,1120,139,1215,F
+246,Motorista de aplicativo,Itapejara D´oeste,PR,31,47,41,342,-308,19,1897,234,1699,F
+539,Atendente de Telemarketing,Cruzeiro do Oeste,PR,28,13,47,101,-342,20,546,71,527,F
+881,Assistente comercial,Ajuricaba,RS,36,18,31,161,-257,14,660,65,541,F
+595,Motorista de aplicativo,Porto Estrela,MT,37,60,84,294,-411,18,1185,188,925,F
+854,Motorista de aplicativo,Terra de Areia,RS,33,28,96,216,-728,16,1015,109,823,F
+92,Entregador de aplicativo,Campinápolis,MT,32,34,57,308,-493,25,2257,237,2054,F
+109,Diretor de compras,Janiópolis,PR,44,77,127,236,-384,17,721,171,518,F
+261,Atendente de Telemarketing,Nova Mutum,MT,35,14,22,104,-174,10,416,42,329,F
+212,Assistente comercial,Santa Maria,RS,33,0,0,0,0,0,0,0,0,F
+479,Motorista de aplicativo,Marques de Souza,RS,26,39,122,369,-1128,19,976,81,764,F
+41,Atendente de Telemarketing,Aripuanã,MT,47,25,27,223,-255,15,820,69,635,F
+568,Atendente de Telemarketing,Barra do Quaraí,RS,22,36,28,164,-124,17,515,84,377,F
+775,Motorista de aplicativo,Sales Oliveira,SP,35,33,20,108,-66,13,461,124,410,F
+557,Assistente comercial,Antônio Prado,RS,39,9,30,69,-220,16,545,66,483,F
+755,Motorista de aplicativo,Canarana,MT,34,22,46,84,-176,17,306,59,226,F
+915,Motorista de aplicativo,Juscimeira,MT,37,13,16,110,-140,9,436,44,366,F
+84,Motorista de aplicativo,Barros Cassal,RS,39,18,19,146,-159,10,859,92,750,F
+752,Gestor de vendas,Ampére,PR,33,23,34,99,-150,17,403,72,317,F
+58,Motorista de aplicativo,Cerro Largo,RS,33,79,73,678,-620,18,1039,48,408,F
+457,Gestor de vendas,Santa Cruz do Xingu,MT,45,24,26,197,-217,16,555,56,470,F
+653,Motorista de aplicativo,Glicério,SP,29,35,36,276,-288,20,735,63,492,F
+325,Atendente de Telemarketing,Santana do Livramento,RS,38,17,47,139,-389,15,491,54,435,F
+788,Gestor de vendas,Silveira Martins,RS,44,13,21,55,-90,14,406,94,388,F
+190,Atendente de Telemarketing,Glória D´oeste,MT,42,13,44,117,-382,18,708,76,635,F
+55,Atendente de Telemarketing,Novo Cabrais,RS,33,13,34,114,-301,12,458,43,369,F
+194,Gestor de vendas,Candelária,RS,41,68,70,542,-566,21,1127,73,585,F
+613,Motorista de aplicativo,Bom Jardim de Goiás,RS,43,15,53,93,-357,6,295,32,217,F
+297,Entregador de aplicativo,Dona Francisca,RS,27,0,0,0,0,0,0,0,0,F
+79,Atendente de Telemarketing,Brasnorte,MT,32,20,67,123,-406,24,592,79,492,F
+728,Motorista de aplicativo,Serafina Corrêa,RS,26,81,184,739,-1691,35,1571,95,873,F
+502,Motorista de aplicativo,Campo Novo,RS,33,21,40,234,-448,15,699,47,522,F
+601,Entregador de aplicativo,Erval Seco,RS,25,47,89,246,-463,18,567,70,360,F
+541,Gestor de vendas,Novo Tiradentes,RS,29,26,46,250,-434,17,904,71,683,F
+430,Gestor de vendas,Capivari do Sul,RS,29,38,37,278,-275,15,621,55,402,F
+900,Diretor de compras,São Pedro Das Missões,RS,39,40,35,373,-334,17,997,73,683,F
+161,Motorista de aplicativo,São José Das Missões,RS,42,13,34,110,-278,15,468,47,371,F
+550,Atendente de Telemarketing,Denise,MT,28,64,63,507,-501,17,905,53,436,F
+121,Gestor de vendas,Monte Alegre Dos Campos,RS,30,24,35,223,-336,11,591,42,388,F
+565,Gestor de vendas,Araricá,RS,33,10,47,101,-490,14,681,59,636,F
+375,Motorista de aplicativo,Cambará do Sul,RS,39,61,143,594,-1393,23,1370,83,804,F
+980,Entregador de aplicativo,Saltinho,SP,38,73,66,561,-509,18,1349,115,880,F
+17,Entregador de aplicativo,Nova Monte Verde,MT,31,35,50,310,-428,27,875,75,654,F
+907,Motorista de aplicativo,Elias Fausto,SP,35,47,102,148,-324,16,301,54,173,F
+97,Gestor de vendas,Colniza,MT,33,16,48,163,-474,16,680,56,559,F
+96,Atendente de Telemarketing,Bossoroca,RS,28,66,78,429,-486,18,830,69,447,F
+899,Motorista de aplicativo,Amaral Ferrador,RS,36,25,20,233,-185,12,566,42,389,F
+195,Motorista de aplicativo,Mata,RS,32,71,112,251,-399,20,1100,254,900,F
+371,Atendente de Telemarketing,Jacuizinho,RS,25,61,53,350,-293,16,942,114,643,F
+374,Motorista de aplicativo,Confresa,MT,47,43,56,432,-541,25,1441,106,1049,F
+924,Gestor de vendas,Maripá,PR,33,45,38,503,-429,22,1323,76,854,F
+109,Entregador de aplicativo,Guairaçá,PR,39,0,0,0,0,0,0,0,0,F
+3,Motorista de aplicativo,Dois Irmãos,RS,40,18,18,63,-61,8,177,37,130,F
+760,Assistente comercial,Nova Brasilândia,MT,39,89,138,725,-1130,28,1182,60,498,F
+871,Motorista de aplicativo,Poloni,SP,30,46,34,436,-328,15,1921,163,1541,F
+967,Motorista de aplicativo,Jauru,MT,30,20,42,60,-129,16,276,72,225,F
+800,Entregador de aplicativo,Eugênio de Castro,RS,41,13,30,63,-151,15,796,152,769,F
+701,Motorista de aplicativo,Porto Esperidião,MT,39,33,47,114,-160,9,477,115,390,F
+430,Motorista de aplicativo,Campina da Lagoa,PR,30,47,33,232,-166,23,628,87,439,F
+175,Motorista de aplicativo,Arroio do Tigre,RS,30,29,16,142,-77,15,392,53,259,F
+608,Gestor de vendas,Boa Vista do Sul,RS,33,25,40,109,-171,15,279,50,210,F
+194,Atendente de Telemarketing,São José do Rio Claro,MT,38,11,40,117,-437,15,2064,188,2035,F
+2,Motorista de aplicativo,General Carneiro,MT,30,32,30,285,-266,18,779,60,539,F
+480,Motorista de aplicativo,Barão do Triunfo,RS,37,22,45,164,-338,18,603,60,453,F
+88,Diretor de compras,Jacutinga,RS,36,21,49,182,-405,20,672,67,569,F
+58,Assistente comercial,São Pedro Das Missões,RS,29,15,28,146,-261,11,476,41,385,F
+18,Entregador de aplicativo,Novo Cabrais,RS,36,40,25,123,-73,20,551,170,509,F
+361,Motorista de aplicativo,Seberi,RS,36,104,161,774,-1215,23,1418,95,707,F
+695,Gestor de vendas,Luciára,MT,33,30,36,247,-305,16,837,78,650,F
+200,Motorista de aplicativo,São José do Rio Claro,MT,23,24,28,186,-211,12,449,36,270,F
+99,Entregador de aplicativo,Diamantino,MT,33,36,23,180,-115,17,453,59,298,F
+724,Gestor de vendas,Nova Guarita,MT,39,55,107,363,-709,16,810,75,495,F
+586,Entregador de aplicativo,Westfalia,RS,35,11,45,104,-407,15,665,68,625,F
+93,Motorista de aplicativo,Novo Cabrais,RS,34,14,39,125,-354,16,603,55,517,F
+259,Gestor de vendas,Capitão,RS,46,30,38,102,-126,20,351,83,283,F
+577,Gestor de vendas,Cerqueira César,SP,26,20,34,116,-197,14,765,116,678,F
+469,Motorista de aplicativo,Rebouças,PR,39,27,38,157,-225,15,863,128,741,F
+579,Atendente de Telemarketing,Aripuanã,MT,34,28,34,97,-118,15,201,37,128,F
+618,Diretor de compras,Novo Santo Antônio,MT,36,12,31,50,-127,13,515,130,553,F
+755,Atendente de Telemarketing,Figueirópolis D´oeste,MT,35,56,63,589,-650,14,1186,62,646,F
+298,Gestor de vendas,Bom Jesus,RS,32,22,22,169,-169,14,586,57,450,F
+354,Entregador de aplicativo,Matupá,MT,31,33,17,270,-138,14,1746,184,1570,F
+853,Motorista de aplicativo,Dezesseis de Novembro,RS,37,27,42,95,-157,20,277,53,193,F
+90,Atendente de Telemarketing,Nova Ramada,RS,34,32,40,256,-318,19,1269,139,1101,F
+5,Diretor de compras,Cruz Alta,RS,37,26,40,230,-352,18,649,49,440,F
+386,Assistente comercial,Santa Lúcia,PR,33,19,19,194,-197,9,781,63,614,F
+321,Motorista de aplicativo,Feliz Natal,MT,28,80,57,253,-179,15,439,68,209,F
+465,Gestor de vendas,Paulo Bento,RS,44,11,29,86,-222,11,340,40,302,F
+334,Motorista de aplicativo,Guarani Das Missões,RS,32,21,42,200,-394,16,1612,164,1508,F
+369,Gestor de vendas,Nova Xavantina,MT,32,26,18,91,-64,12,225,39,133,F
+728,Motorista de aplicativo,Várzea Grande,MT,28,22,27,158,-197,13,515,56,397,F
+532,Motorista de aplicativo,Nova Bandeirantes,MT,39,15,44,150,-449,14,671,55,567,F
+815,Motorista de aplicativo,Pelotas,RS,40,33,25,345,-264,13,863,59,651,F
+330,Motorista de aplicativo,Três Coroas,SP,42,31,26,271,-227,12,1027,100,870,F
+502,Gestor de vendas,Dona Francisca,RS,31,22,29,115,-148,12,415,59,313,F
+998,Atendente de Telemarketing,Senador Salgado Filho,RS,36,25,19,222,-164,14,598,48,428,F
+327,Gestor de vendas,Paranapoema,PR,27,22,69,157,-460,13,742,90,615,F
+376,Diretor de compras,Novo Santo Antônio,MT,41,19,27,180,-256,12,487,35,337,F
+332,Entregador de aplicativo,Vale de São Domingos,MT,33,24,31,149,-201,12,832,111,707,F
+746,Atendente de Telemarketing,Vale de São Domingos,MT,43,18,15,163,-137,10,943,109,975,F
+827,Atendente de Telemarketing,Capela de Santana,RS,35,8,31,75,-296,9,458,46,435,F
+240,Motorista de aplicativo,Montauri,RS,29,0,0,0,0,0,0,0,0,F
+727,Motorista de aplicativo,Barros Cassal,RS,42,13,34,106,-275,11,824,97,783,F
+528,Entregador de aplicativo,Tapejara,RS,36,14,26,47,-96,10,198,46,172,F
+705,Atendente de Telemarketing,Antônio Prado,RS,44,42,40,164,-161,8,278,37,145,F
+564,Motorista de aplicativo,Ibirapuitã,RS,39,11,15,58,-73,9,382,73,374,F
+753,Gestor de vendas,Figueirópolis D´oeste,MT,34,12,20,105,-172,5,233,24,200,F
+700,Motorista de aplicativo,Tio Hugo,RS,33,35,19,310,-164,6,673,62,538,F
+977,Atendente de Telemarketing,Nova Maringá,MT,37,0,0,0,0,0,0,0,0,F
+530,Gestor de vendas,Ronda Alta,RS,42,22,35,122,-196,6,424,66,369,F
+379,Entregador de aplicativo,Santa Clara do Sul,RS,32,0,0,0,0,0,0,0,0,F
+243,Motorista de aplicativo,Ivorá,RS,31,19,30,181,-283,4,210,16,152,F
+349,Motorista de aplicativo,Bananal,SP,33,13,27,139,-303,2,238,19,203,F
+677,Motorista de aplicativo,Paim Filho,RS,31,19,12,187,-119,3,196,15,153,F
+478,Motorista de aplicativo,Carazinho,RS,35,9,27,72,-216,3,223,30,252,F
+260,Assistente comercial,Óleo,SP,29,6,9,26,-43,2,56,15,69,F
+108,Motorista de aplicativo,Barão de Melgaço,MT,35,3,3,32,-34,2,63,10,104,F
+944,Entregador de aplicativo,Pardinho,SP,38,6,6,42,-42,2,84,7,48,F
+93,Gestor de vendas,Brasnorte,MT,39,5,29,54,-289,2,210,26,274,F
+897,Gestor de vendas,Canguçu,RS,27,4,11,36,-90,1,81,9,81,F
+741,Atendente de Telemarketing,Godoy Moreira,PR,31,3,1,27,-9,0,0,3,27,F
+418,Atendente de Telemarketing,Santa Carmem,MT,30,1,0,4,0,0,0,1,4,F
