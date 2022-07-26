@@ -14,16 +14,83 @@
 </head>
 
 <body>
-    <h1>Hello World</h1>
+    <section id="secPrincipal">
+        <div class="divPrincipal">
+            <div id="divImg">
+                <img src="/static/assets/null.png" id="imgPred">
+            </div>
 
-    <div>
-        <form id="form">
-            <input type="text" id="input1" placeholder="Campo 1" required>
-            <input type="text" id="input2" placeholder="Campo 2" required>
+            <div id="divForm">
+                <div class="divTitle">
+                    <p>
+                        Preditor de desligamento do colaborador
+                    </p>
+                </div>
+                <div class="page">
 
-            <button id="buttonSubmit" type="submit">Clique aqui</button>
-        </form>
-    </div>
+                    <div class="field field_v1">
+                        <input type="number" id="nivel_satisfacao" class="field__input" placeholder="Digite valores entre 0 e 1">
+                        <span class="field__label-wrap" aria-hidden="true">
+                                <span class="field__label">Nível de Satisfação</span>
+                        </span>
+                    </div>
+
+                    <div class="field field_v1">
+                        <input type="number" id="ultima_avaliacao" class="field__input" placeholder="Digite valores entre 0 e 1">
+                        <span class="field__label-wrap" aria-hidden="true">
+                          <span class="field__label">Última avaliação</span>
+                        </span>
+                    </div>
+
+                    <div class="field field_v1">
+                        <input type="number" id="tempo_empresa" class="field__input" placeholder="Em anos">
+                        <span class="field__label-wrap" aria-hidden="true">
+                          <span class="field__label">Tempo de Empresa</span>
+                        </span>
+                    </div>
+
+                    <div class="field field_v1">
+                        <input type="number" id="numero_projetos" class="field__input" placeholder="Quantidade">
+                        <span class="field__label-wrap" aria-hidden="true">
+                          <span class="field__label">Número de projetos</span>
+                        </span>
+                    </div>
+
+                    <div class="field field_v1">
+                        <input type="number" id="horas_medias_por_mes" class="field__input" placeholder="Quantidade">
+                        <span class="field__label-wrap" aria-hidden="true">
+                          <span class="field__label">Média de Horas trabalhadas no mês</span>
+                        </span>
+                    </div>
+
+                    <div class="groupButton">
+                        <button class="btnSubmit" id="buttonSubmit">Realizar Previsão</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="secAbout">
+        <div class="divTitleAbout">
+            <p>Sobre o projeto</p>
+        </div>
+
+
+
+        <div class="divBodyAbout container">
+            <div class="separator">Introdução</div><br/>
+
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+                desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+            </p>
+
+            <div class="separator">Dumb text2</div><br/>
+        </div>
+    </section>
+
 </body>
 
 </html>
