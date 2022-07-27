@@ -45,7 +45,7 @@ body {
 .btnSubmit {
     line-height: 1.25;
     border: none;
-    background: #432678;
+    background: #424456;
     box-shadow: 5px 5px 15px #dfdfdf;
     text-decoration: none;
     height: 3em;
@@ -206,7 +206,7 @@ LEVEL 4. SETTINGS
 /*-------------------------------------------------------*/
 
 #secAbout {
-    background-color: #432678;
+    background-color: #424456;
 }
 
 #secAbout p {

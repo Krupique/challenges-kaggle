@@ -1,0 +1,3 @@
+Algoritmo: [Random Forest]
+stand:[StandardScaler()] [ACCURACY] train:[99.59%]  test:[98.72%]
+stand:[StandardScaler()] [F1 SCORE] train:[99.59%]  test:[97.27%]
