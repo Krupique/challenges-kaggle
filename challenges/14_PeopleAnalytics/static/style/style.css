@@ -205,11 +205,12 @@ LEVEL 4. SETTINGS
 
 /*-------------------------------------------------------*/
 
-#secAbout {
+.secBlack {
     background-color: #424456;
 }
 
-#secAbout p {
+.secBlack p,
+li {
     color: rgb(235, 235, 235);
 }
 
@@ -230,6 +231,20 @@ LEVEL 4. SETTINGS
     color: rgb(235, 235, 235);
 }
 
+.separator_black {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: black;
+}
+
+.separator_black::before,
+.separator_black::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid black;
+}
+
 .separator::before,
 .separator::after {
     content: '';
@@ -237,10 +252,12 @@ LEVEL 4. SETTINGS
     border-bottom: 1px solid rgb(235, 235, 235);
 }
 
-.separator::before {
+.separator::before,
+.separator_black::before {
     margin-right: .25em;
 }
 
-.separator::after {
+.separator::after,
+.separator_black::after {
     margin-left: .25em;
 }
