@@ -1,5 +1,7 @@
 <h1>PEOPLE ANALYTICS - PREVENDO SE O COLABORADOR VAI DEIXAR A EMPRESA</h1>
 
+> A aplicação pode ser executada no servidor do Heroku: <a target="_blank" href="https://app-people-analytics.herokuapp.com">people-analytics.com</a>
+
 <h2>INTRODUÇÃO</h2>
 
 <h3>O que é People Analytics</h3>
@@ -15,23 +17,49 @@ Este projeto tem por objetivo aplicar técnicas de análise descritiva, estatís
 
 <h2>ORGANIZAÇÃO DOS DIRETÓRIOS</h2>
 
-> **apresentacao/**: Apresentação dos resultados obtidos das análises descritiva e preditiva em formato de slides;<br/>
-> **notebook/**: Arquivo jupyter-notebook python contendo em detalhes todo o projeto, metodologia, conceitos e técnicas aplicadas.<br/>
-> **static/**: Arquivos CSS e Javascript utilizados para a construção do website<br/>
-> **templates/**: Contém o arquivo index.HTML do website.<br/>
-> **tools/**: Classe Python Colaborador, responsável por receber os parâmetros via Ajax e realizar a previsão utilizando a API.
-> `Procfile`: Arquivo de configuração para o Deploy no servidor do Heroku;
-> `main.py`: App Python responsável por executar a aplicação Flask;
-> `requirements.txt`: Pacotes que serão instalados ao realizar o deploy no Heroku;
-> `runtime.txt`: Versão Python que será instalada no servidor do Heroku;
+> **`apresentacao/`**: Apresentação dos resultados obtidos das análises descritiva e preditiva em formato de slides;<br/>
+> **`notebook/`**: Arquivo jupyter-notebook python contendo em detalhes todo o projeto, metodologia, conceitos e técnicas aplicadas.<br/>
+> **`static/`**: Arquivos CSS e Javascript utilizados para a construção do website<br/>
+> **`templates/`**: Contém o arquivo index.HTML do website.<br/>
+> **`tools/`**: Classe Python Colaborador, responsável por receber os parâmetros via Ajax e realizar a previsão utilizando a API.<br/>
+> `Procfile`: Arquivo de configuração para o Deploy no servidor do Heroku;<br/>
+> `main.py`: App Python responsável por executar a aplicação Flask;<br/>
+> `requirements.txt`: Pacotes que serão instalados ao realizar o deploy no Heroku;<br/>
+> `runtime.txt`: Versão Python que será instalada no servidor do Heroku;<br/>
+
+---
 
 ---
 
 <h2>TÉCNOLOGIAS UTILIZADAS</h2>
 
+* Para análises: `Python (jupyter-notebook)`;
+* Construção e avaliação do modelo: `Python (jupyter-notebook)`;
+* Criação da API: `Python`;
+* Desenvolvimento do Website: `Python`, `Flask`, `HTML`, `Javascript` e `CSS`;
+* Apresentação dos resultados: `Microsoft PowerPoint`;
+
+---
+
+<h2>SOBRE O DATASET</h2>
+
+O dataset se trata de um conjunto de dados fictícios de uma empresa fictícia. É um dataset próprio para estudo deste tema e contempla os seguintes atributos:
+* **nivel_satisfacao**: O nível de satisfação é uma nota que representa o quão satisfeito o colaborador está trabalhando na empresa.
+* **ultima_avaliacao**: A última avaliação representa a nota atribuída pelo usuário na última pesquisa de avaliação feita pela empresa.
+* **numero_projetos**: Quantidade de projetos que o colaborador já atuou.
+* **horas_medias_por_mes**: Média de horas trabalhadas por mês.
+* **tempo_empresa**: Quantidade em anos que o colaborador está na empresa.
+* **acidente_trabalho**: Indica se o colaborador já sofreu acidente de trabalho.
+* **deixou_empresa**: Variável target e representa se o colaborador saiu da empresa.
+* **ultima_promocao_5anos**: Atributo categórico que mostra se o colaborador teve promoção nos últimos 5 anos.
+* **area**: Área de atuação dentro da empresa.
+* **salario**: Faixa salarial categórica. Como o salário é uma informação sensível, o atributo está apenas dividio em salário: `baixo`, `médio` e `alto`. 
+
 ---
 
 <h2>SUMÁRIO</h2>
+
+A seguir o sumário contendo todos os tópicos abordados no desenvolvimento do projeto. Você pode visualizar em detalhes a implementação e explicação de todos os tópicos no jupyter notebook.
 
 * **1) INTRODUÇÃO**
 	* 1.1) O que é People Analytics 
@@ -81,17 +109,4 @@ Este projeto tem por objetivo aplicar técnicas de análise descritiva, estatís
 ---
 
 
-<h3>1.3) Sobre o Dataset</h3>
-
-O dataset se trata de um conjunto de dados fictícios de uma empresa fictícia. É um dataset próprio para estudo deste tema e contempla os seguintes atributos:
-* **nivel_satisfacao**: O nível de satisfação é uma nota que representa o quão satisfeito o colaborador está trabalhando na empresa.
-* **ultima_avaliacao**: A última avaliação representa a nota atribuída pelo usuário na última pesquisa de avaliação feita pela empresa.
-* **numero_projetos**: Quantidade de projetos que o colaborador já atuou.
-* **horas_medias_por_mes**: Média de horas trabalhadas por mês.
-* **tempo_empresa**: Quantidade em anos que o colaborador está na empresa.
-* **acidente_trabalho**: Indica se o colaborador já sofreu acidente de trabalho.
-* **deixou_empresa**: Variável target e representa se o colaborador saiu da empresa.
-* **ultima_promocao_5anos**: Atributo categórico que mostra se o colaborador teve promoção nos últimos 5 anos.
-* **area**: Área de atuação dentro da empresa.
-* **salario**: Faixa salarial categórica. Como o salário é uma informação sensível, o atributo está apenas dividio em salário: `baixo`, `médio` e `alto`. 
 
