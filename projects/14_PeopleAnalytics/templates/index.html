@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/static/script/jquery-3.6.0.min.js"></script>
+    <script src="/static/script/bootstrap.min.js"></script>
+    <script src="/static/script/main.js"></script>
+    <link href="/static/style/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/style/style.css" rel="stylesheet">
+    <title>People Analytics</title>
+</head>
+
+<body>
+    <section id="secPrincipal">
+        <div class="divPrincipal">
+            <div id="divImg">
+                <img src="/static/assets/null.png" id="imgPred">
+            </div>
+
+            <div id="divForm">
+                <div class="divTitle">
+                    <p>
+                        Preditor de desligamento do colaborador
+                    </p>
+                </div>
+                <div class="page">
+
+                    <div class="field field_v1">
+                        <input type="number" id="nivel_satisfacao" class="field__input" placeholder="Digite valores entre 0 e 1">
+                        <span class="field__label-wrap" aria-hidden="true">
+                                <span class="field__label">Nível de Satisfação</span>
+                        </span>
+                    </div>
+
+                    <div class="field field_v1">
+                        <input type="number" id="ultima_avaliacao" class="field__input" placeholder="Digite valores entre 0 e 1">
+                        <span class="field__label-wrap" aria-hidden="true">
+                          <span class="field__label">Última avaliação</span>
+                        </span>
+                    </div>
+
+                    <div class="field field_v1">
+                        <input type="number" id="tempo_empresa" class="field__input" placeholder="Em anos">
+                        <span class="field__label-wrap" aria-hidden="true">
+                          <span class="field__label">Tempo de Empresa</span>
+                        </span>
+                    </div>
+
+                    <div class="field field_v1">
+                        <input type="number" id="numero_projetos" class="field__input" placeholder="Quantidade">
+                        <span class="field__label-wrap" aria-hidden="true">
+                          <span class="field__label">Número de projetos</span>
+                        </span>
+                    </div>
+
+                    <div class="field field_v1">
+                        <input type="number" id="horas_medias_por_mes" class="field__input" placeholder="Quantidade">
+                        <span class="field__label-wrap" aria-hidden="true">
+                          <span class="field__label">Média de Horas trabalhadas no mês</span>
+                        </span>
+                    </div>
+
+                    <div class="groupButton">
+                        <button class="btnSubmit" id="buttonSubmit">Realizar Previsão</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="secBlack">
+        <div class="divTitleAbout">
+            <p>Sobre o projeto</p>
+        </div>
+
+
+
+        <div class="divBodyAbout container">
+            <div class="separator">O que é People Analytics</div><br/>
+
+            <p>
+                People analytics é um processo de coleta e análise de dados voltado para a gestão de pessoas em empresas. O conceito nasce a partir da ideia de big data, que consiste na coleta, armazenamento e análise de um volume imenso de dados. Com tantas informações
+                disponíveis ou passíveis de serem coletadas, as empresas têm identificado oportunidades de aproveitá-las para melhorar seus processos. É bom deixar claro desde o começo que o People Analytics não é uma ferramenta ou um software. Trata-se
+                de uma metodologia cujo princípio é a coleta, a organização e a análise de dados aplicada à gestão de pessoas para se ter uma visão mais estratégica do papel de cada colaborador dentro de uma empresa. Seu objetivo é melhorar a qualidade
+                da tomada de decisão sobre os profissionais a partir da coleta e do cruzamento de informações relacionadas a eles. Assim, é possível tanto reconhecer um funcionário que se destaca quanto identificar problemas que estejam ocorrendo, como
+                baixa produtividade, pouco engajamento, insatisfação, alto índice de rotatividade, entre outros.
+            </p>
+
+            <div class="separator">Objetivo do projeto</div><br/>
+
+            <p>
+                Este projeto tem por objetivo aplicar técnicas de análise descritiva, estatística e preditiva dos dados para entender o comportamento dos colaboradores e os principais fatores que levam o mesmo a deixar ou não a empresa.
+            </p>
+
+
+            <div class="separator">Compreendendo os atributos</div><br/>
+
+
+            <p>
+                Neste preditor temos cinco atributos que foram obtidos a partir do modelo. Os atributos foram selecionados a partir de técnicas de extração de atributos que consideram os melhores para fazer parte modelo. As técnicas utilizadas foram: Matriz de Correlação
+                e Random Forest.
+            </p>
+            <p>
+                O critério utilizado para selecionar os atributos foi a pontuação do Random Forest maior que 0.1. Com isso, eu obtive os seguintes atributos:
+            </p>
+
+            <ul>
+                <li><b>Nível de Satisfação</b>: Comporta valores entre 0 e 1, sendo 0 completamente insatisfeito e 1 completamente satisfeito.</li>
+                <li><b>Última avaliação</b>: Comporta valores entre 0 e 1, sendo 0 avaliação péssima e 1 o mais bem avaliado possível.</li>
+                <li><b>Tempo de Empresa</b>: Em anos. O dataset possui valores entre 1 e 10 anos, portanto estes são os valores esperados pelo algoritmo.</li>
+                <li><b>Número de Projetos</b>: Quantidade de projetos que o colaborador já participou. O modelo espera valores inteiros entre 1 e 7.</li>
+                <li><b>Média de Horas Trabalhadas no mês</b>: Uma jornada de 40 horas semanais equivale a mais ou menos 180 horas por mês e uma jornada de 44 horas semanais equivale a aproximadamente 200 horas mensais. O modelo comporta valores entre: 0 e
+                    320 horas trabalhadas por mês</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="secApresentacao">
+        <div class="divTitleAbout">
+            <p>Apresentação dos resultados</p>
+        </div>
+
+        <div class="container">
+            <div class="separator_black">Apresentação</div><br/>
+
+            <p>Abaixo temos a apresentação em formato de slides das análises descritiva e preditiva dos resultados obtidos.</p>
+
+            <object data="/static/assets/apresentacao.pdf" type="application/pdf" style="width: 100%; height: 600px;">
+                <p>Seu navegador não tem um plugin pra PDF</p>
+            </object>
+        </div>
+
+    </section>
+
+    <section class="secBlack">
+        <div class="divTitleAbout">
+            <p>Mais em</p>
+        </div>
+
+        <div class="divBodyAbout container">
+            <p>
+                Caso tenha interesse em saber todos os detalhes de como o projeto foi implementado, segue o link para o repositório:
+                <a style="color: #76d2db;" target="_blank" href="https://github.com/Krupique/challenges-kaggle/tree/main/challenges/14_PeopleAnalytics">Link do Repositório</a>
+            </p>
+
+
+            <p>
+                No repositório você encontra a implementação do notebook, com a documentação de todos os conceitos, técnicas e justificativas de cada etapa do projeto. Desde a Definição do problema, coleta dos dados, análise exploratória, análise descritiva, pré processamento
+                do modelo, modelagem, avaliação dos resultados, exportação do modelo e considerações finais.
+            </p>
+
+            <p>
+                O repositório também contempla toda a implementação do web site (front-end e back-end). Aborda a explicação sobre como foi realizada a criação da API e como foi feita toda a integração.
+            </p>
+
+            <p>
+                Por fim, o repositório contempla os arquivos assets (imagens, documentos) utilizados e a apresentação final em slides para os gestores.
+            </p>
+        </div>
+    </section>
+
+</body>
+
+</html>
