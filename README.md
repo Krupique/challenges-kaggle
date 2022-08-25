@@ -48,3 +48,9 @@ A basic description of datasets and competitions:<br/>
  * **Store Item Demand Forecasting Challenge**<br/>
   This competition is provided as a way to explore different time series techniques on a relatively simple and clean dataset. The analyst is given 5 years of store item sales data and is asked to forecast 3 months of sales for 50 different items across 10 different stores.<br/>
   <a target="_blank" href="https://www.kaggle.com/competitions/demand-forecasting-kernels-only/overview">Store Item Demand dataset</a>
+  
+  * **Estimating Illicit Accounts** <br/>
+  In this notebook, a case of classification of illicit accounts will be solved. Customer accounts have the following classifications: A, B, C, D and F. F being F for accounts considered Fraud.
+The objective of this project is to perform a descriptive analysis of the data and the creation of a Machine Learning model capable of classifying accounts as 0 for legal (normal) accounts and 1 for illegal accounts (Fraud).
+  <a target="_blank" href="https://github.com/Krupique/challenges-kaggle/tree/main/challenges/11_EstimatingIllicitAccounts/data">Illicit Accounts dataset</a>
+  
