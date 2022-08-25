@@ -61,6 +61,6 @@ We will perform data analysis based on time series and geospatial analyses, in a
 
 * **Marketing Analytics**<br/>
  Complete Marketing Analytics project with advanced techniques of Descriptive Analysis, Statistical Analysis, Clustering, Regression and Business Analytics in order to explain and make forecasts for the areas of Marketing, Sales and Management of the company's business.
- <a target="_blank" href="https://github.com/Krupique/challenges-kaggle/tree/main/challenges/12_MarijuanaLegalization/dados">https://github.com/Krupique/challenges-kaggle/tree/main/challenges/13_MarketingAnalytics/data>Sales Dataset</a>
+ <a target="_blank" href="https://github.com/Krupique/challenges-kaggle/tree/main/challenges/13_MarketingAnalytics/data>Sales Dataset</a>
   
   
