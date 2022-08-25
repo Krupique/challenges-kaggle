@@ -54,3 +54,9 @@ A basic description of datasets and competitions:<br/>
 The objective of this project is to perform a descriptive analysis of the data and the creation of a Machine Learning model capable of classifying accounts as 0 for legal (normal) accounts and 1 for illegal accounts (Fraud).
   <a target="_blank" href="https://github.com/Krupique/challenges-kaggle/tree/main/challenges/11_EstimatingIllicitAccounts/data">Illicit Accounts dataset</a>
   
+  * **What is the Effect of Marijuana Legalization on Crime Rates Over Time?**<br/>
+  In 2016, California voters in the US passed Proposition 64, which legalized the recreational use of marijuana in the state.
+We will perform data analysis based on time series and geospatial analyses, in addition to other more general exploratory techniques, to examine whether these predictions have come true in Los Angeles since legalization took effect.
+<a target="_blank" href="https://github.com/Krupique/challenges-kaggle/tree/main/challenges/12_MarijuanaLegalization/dados">All datasets used</a>
+  
+  
