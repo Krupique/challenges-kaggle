@@ -58,5 +58,9 @@ The objective of this project is to perform a descriptive analysis of the data a
   In 2016, California voters in the US passed Proposition 64, which legalized the recreational use of marijuana in the state.
 We will perform data analysis based on time series and geospatial analyses, in addition to other more general exploratory techniques, to examine whether these predictions have come true in Los Angeles since legalization took effect.
 <a target="_blank" href="https://github.com/Krupique/challenges-kaggle/tree/main/challenges/12_MarijuanaLegalization/dados">All datasets used</a>
+
+* **Marketing Analytics**<br/>
+ Complete Marketing Analytics project with advanced techniques of Descriptive Analysis, Statistical Analysis, Clustering, Regression and Business Analytics in order to explain and make forecasts for the areas of Marketing, Sales and Management of the company's business.
+ <a target="_blank" href="https://github.com/Krupique/challenges-kaggle/tree/main/challenges/12_MarijuanaLegalization/dados">https://github.com/Krupique/challenges-kaggle/tree/main/challenges/13_MarketingAnalytics/data>Sales Dataset</a>
   
   
