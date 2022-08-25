@@ -63,6 +63,10 @@ We will perform data analysis based on time series and geospatial analyses, in a
  Complete Marketing Analytics project with advanced techniques of Descriptive Analysis, Statistical Analysis, Clustering, Regression and Business Analytics in order to explain and make forecasts for the areas of Marketing, Sales and Management of the company's business.<br/>
  <a target="_blank" href="https://github.com/Krupique/challenges-kaggle/tree/main/challenges/13_MarketingAnalytics/data">Sales Dataset</a>
  
+ * **People Analytics - Predicting if the Employee Will Leave the Company**<br/>
+ This project aims to apply descriptive, statistical and predictive data analysis techniques to understand the behavior of employees and the main factors that lead them to leave the company or not. In the end, we expect a predictive model capable of predicting whether or not the employee will leave the company and a complete report on the results of the analysis.<br/>
+ <a target="_blank" href="https://github.com/Krupique/challenges-kaggle/tree/main/challenges/14_PeopleAnalytics/notebook/data">Employee Evaluations Dataset</a>
+
 * **Blood Pressure Predictor using Amazon SageMaker**<br/>
 The main objective is the deployment of this project in a cloud environment. The environment chosen was the Amazon AWS cloud environment called SageMaker. Amazon SageMaker is a service that makes it easy to build, train, and execute machine learning (ML) models quickly and reliably. It is fully managed by AWS, which removes the heavy lifting from each step, so the user can develop high quality ML models.<br/>
 <a target="_blank" href="https://github.com/Krupique/challenges-kaggle/tree/main/challenges/15_BloodPressurePredictor/dados">Blood Pressure Dataset</a>
