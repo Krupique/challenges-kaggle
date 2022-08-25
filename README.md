@@ -51,16 +51,19 @@ A basic description of datasets and competitions:<br/>
   
   * **Estimating Illicit Accounts** <br/>
   In this notebook, a case of classification of illicit accounts will be solved. Customer accounts have the following classifications: A, B, C, D and F. F being F for accounts considered Fraud.
-The objective of this project is to perform a descriptive analysis of the data and the creation of a Machine Learning model capable of classifying accounts as 0 for legal (normal) accounts and 1 for illegal accounts (Fraud).
+The objective of this project is to perform a descriptive analysis of the data and the creation of a Machine Learning model capable of classifying accounts as 0 for legal (normal) accounts and 1 for illegal accounts (Fraud).<br/>
   <a target="_blank" href="https://github.com/Krupique/challenges-kaggle/tree/main/challenges/11_EstimatingIllicitAccounts/data">Illicit Accounts dataset</a>
   
   * **What is the Effect of Marijuana Legalization on Crime Rates Over Time?**<br/>
   In 2016, California voters in the US passed Proposition 64, which legalized the recreational use of marijuana in the state.
-We will perform data analysis based on time series and geospatial analyses, in addition to other more general exploratory techniques, to examine whether these predictions have come true in Los Angeles since legalization took effect.
+We will perform data analysis based on time series and geospatial analyses, in addition to other more general exploratory techniques, to examine whether these predictions have come true in Los Angeles since legalization took effect.<br/>
 <a target="_blank" href="https://github.com/Krupique/challenges-kaggle/tree/main/challenges/12_MarijuanaLegalization/dados">All datasets used</a>
 
 * **Marketing Analytics**<br/>
- Complete Marketing Analytics project with advanced techniques of Descriptive Analysis, Statistical Analysis, Clustering, Regression and Business Analytics in order to explain and make forecasts for the areas of Marketing, Sales and Management of the company's business.
- <a target="_blank" href="https://github.com/Krupique/challenges-kaggle/tree/main/challenges/13_MarketingAnalytics/data>Sales Dataset</a>
-  
+ Complete Marketing Analytics project with advanced techniques of Descriptive Analysis, Statistical Analysis, Clustering, Regression and Business Analytics in order to explain and make forecasts for the areas of Marketing, Sales and Management of the company's business.<br/>
+ <a target="_blank" href="https://github.com/Krupique/challenges-kaggle/tree/main/challenges/13_MarketingAnalytics/data">Sales Dataset</a>
+ 
+* **Blood Pressure Predictor using Amazon SageMaker**<br/>
+The main objective is the deployment of this project in a cloud environment. The environment chosen was the Amazon AWS cloud environment called SageMaker. Amazon SageMaker is a service that makes it easy to build, train, and execute machine learning (ML) models quickly and reliably. It is fully managed by AWS, which removes the heavy lifting from each step, so the user can develop high quality ML models.<br/>
+<a target="_blank" href="https://github.com/Krupique/challenges-kaggle/tree/main/challenges/15_BloodPressurePredictor/dados">Blood Pressure Dataset</a>
   
