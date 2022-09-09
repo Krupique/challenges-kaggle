@@ -48,3 +48,26 @@ A basic description of datasets and competitions:<br/>
  * **Store Item Demand Forecasting Challenge**<br/>
   This competition is provided as a way to explore different time series techniques on a relatively simple and clean dataset. The analyst is given 5 years of store item sales data and is asked to forecast 3 months of sales for 50 different items across 10 different stores.<br/>
   <a target="_blank" href="https://www.kaggle.com/competitions/demand-forecasting-kernels-only/overview">Store Item Demand dataset</a>
+  
+  * **Estimating Illicit Accounts** <br/>
+  In this notebook, a case of classification of illicit accounts will be solved. Customer accounts have the following classifications: A, B, C, D and F. F being F for accounts considered Fraud.
+The objective of this project is to perform a descriptive analysis of the data and the creation of a Machine Learning model capable of classifying accounts as 0 for legal (normal) accounts and 1 for illegal accounts (Fraud).<br/>
+  <a target="_blank" href="https://github.com/Krupique/challenges-kaggle/tree/main/challenges/11_EstimatingIllicitAccounts/data">Illicit Accounts dataset</a>
+  
+  * **What is the Effect of Marijuana Legalization on Crime Rates Over Time?**<br/>
+  In 2016, California voters in the US passed Proposition 64, which legalized the recreational use of marijuana in the state.
+We will perform data analysis based on time series and geospatial analyses, in addition to other more general exploratory techniques, to examine whether these predictions have come true in Los Angeles since legalization took effect.<br/>
+<a target="_blank" href="https://github.com/Krupique/challenges-kaggle/tree/main/challenges/12_MarijuanaLegalization/dados">All datasets used</a>
+
+* **Marketing Analytics**<br/>
+ Complete Marketing Analytics project with advanced techniques of Descriptive Analysis, Statistical Analysis, Clustering, Regression and Business Analytics in order to explain and make forecasts for the areas of Marketing, Sales and Management of the company's business.<br/>
+ <a target="_blank" href="https://github.com/Krupique/challenges-kaggle/tree/main/challenges/13_MarketingAnalytics/data">Sales Dataset</a>
+ 
+ * **People Analytics - Predicting if the Employee Will Leave the Company**<br/>
+ This project aims to apply descriptive, statistical and predictive data analysis techniques to understand the behavior of employees and the main factors that lead them to leave the company or not. In the end, we expect a predictive model capable of predicting whether or not the employee will leave the company and a complete report on the results of the analysis.<br/>
+ <a target="_blank" href="https://github.com/Krupique/challenges-kaggle/tree/main/challenges/14_PeopleAnalytics/notebook/data">Employee Evaluations Dataset</a>
+
+* **Blood Pressure Predictor using Amazon SageMaker**<br/>
+The main objective is the deployment of this project in a cloud environment. The environment chosen was the Amazon AWS cloud environment called SageMaker. Amazon SageMaker is a service that makes it easy to build, train, and execute machine learning (ML) models quickly and reliably. It is fully managed by AWS, which removes the heavy lifting from each step, so the user can develop high quality ML models.<br/>
+<a target="_blank" href="https://github.com/Krupique/challenges-kaggle/tree/main/challenges/15_BloodPressurePredictor/dados">Blood Pressure Dataset</a>
+  
