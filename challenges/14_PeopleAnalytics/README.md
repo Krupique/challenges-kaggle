@@ -2,6 +2,16 @@
 
 > A aplicação pode ser executada no servidor do Heroku: <a target="_blank" href="https://app-people-analytics.herokuapp.com">people-analytics.com</a>
 
+> `Nota: O projeto foi hospedado no servidor gratuito do Heroku. Portanto, uma possível lentidão pode ser causada pelo fato de estar em um ambiente gratuito e com limitações.`
+
+<h2>DEMONSTRAÇÃO DA EXECUÇÃO DO PROJETO</h2>
+
+> Clique na imagem para visualizar:
+
+<a target="blank" href="https://youtu.be/ethIJBJKehg">
+<img src="apresentacao/demonstration/video_thumb_play.png" width="400px"></img>
+</a>
+
 <h2>INTRODUÇÃO</h2>
 
 <h3>O que é People Analytics</h3>
@@ -29,7 +39,6 @@ Este projeto tem por objetivo aplicar técnicas de análise descritiva, estatís
 
 ---
 
----
 
 <h2>TÉCNOLOGIAS UTILIZADAS</h2>
 
